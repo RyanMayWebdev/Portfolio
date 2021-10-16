@@ -1,6 +1,30 @@
 @import '_setup';
+
+// =====================
+// GENERAL STYLING
+// =====================
+
 html {
     font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+
+
+// =====================
+// TYPOGRAPHY
+// =====================
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: #272727;
+    color: #d9d9d9;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -17,31 +41,51 @@ h1 {
     }
 }
 
-a {
-    color: #d9d9d9;
-    text-decoration: none;
+h2,h3 {
+    color: #9eff7e;
 }
 
-.srOnly:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
-body {
-    background-color: #272727;
-    color: #d9d9d9;
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
-}
+// =====================
+// HEADER
+// =====================
 
 .topNav {
-    left: 0px;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+    position: fixed;
+    right: 2rem;
+    top: 1rem;
+    width: 1rem;
 
-    ul {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
+}
+
+.navMenu {
+    position:absolute;
+    z-index: 1000;
+}
+
+.navDropdown {
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    list-style-type: none;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateX(55vw);
+    transition: all 2s;
+    visibility: hidden;
+    width: 50vw;
+    .navLink {
+        font-size: 2.5rem;
     }
+}
+
+.revealNav {
+    transform: translateX(0px);
+    visibility: visible;
+
 }
 
 .sideNav {
@@ -61,6 +105,7 @@ body {
     left: 0;
     list-style-type: none;
     margin: 0;
+    padding: 0;
     position: absolute;
     top: 50%;
     width: 20%;
@@ -68,13 +113,14 @@ body {
     .contactList {
         margin: 1rem;
     }
-}
 
-.scrollWrapper {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    .icon:hover, .icon:focus {
+        color:#9eff7e;
+    }
 }
+// =====================
+// MAIN
+// =====================
 
 section {
     margin: auto;
@@ -84,33 +130,44 @@ section {
     width: 80%;
 }
 
-.projectContainer {
+.articleContainer {
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: space-evenly;
-    margin: 0 auto;
-    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
 }
 
-.projectCard {
-    flex: 0 1 25%;
+
+.scrollWrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
+
+// =====================
+// WELCOME SCREEN
+// =====================
+
+.background {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -5;
+}
+
 
 .welcome {
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
+    align-items: center;
     display: flex;
     height: 100vh;
-    position: relative;
     justify-content: center;
-    align-items: center;
+    margin-top: 0;
     max-width: unset;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
     z-index: -5;
 
     .welcome canvas {
@@ -123,22 +180,17 @@ section {
 
 }
 
+// =====================
+// ABOUT
+// =====================
+
 .profileImage {
     width: 25%;
 }
 
-
-
-h2,h3 {
-    color: #9eff7e;
-}
-
-.articleContainer {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-}
+// =====================
+// SKILLS
+// =====================
 
 .flexContainer{
     display: flex;
@@ -158,11 +210,32 @@ h2,h3 {
     font-size: 6em;
 }
 
+// =====================
+// PROJECTS
+// =====================
 
-.background {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -5;
+.projectContainer {
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 90%;
 }
+
+.projectCard {
+    flex: 0 1 25%;
+}
+
+
+
+
+
+
+
+
+

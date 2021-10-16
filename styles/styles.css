@@ -184,8 +184,34 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+.srOnly:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
 html {
   font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+body {
+  background-color: #272727;
+  color: #d9d9d9;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -201,45 +227,52 @@ h1 span {
   color: #9eff7e;
 }
 
-a {
-  color: #d9d9d9;
-  text-decoration: none;
-}
-
-.srOnly:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0);
-  overflow: hidden;
-}
-
-body {
-  background-color: #272727;
-  color: #d9d9d9;
-  font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
+h2, h3 {
+  color: #9eff7e;
 }
 
 .topNav {
-  left: 0px;
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  position: fixed;
+  right: 2rem;
+  top: 1rem;
+  width: 1rem;
 }
-.topNav ul {
+
+.navMenu {
+  position: absolute;
+  z-index: 1000;
+}
+
+.navDropdown {
+  background-color: #171717;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
   list-style-type: none;
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(55vw);
+          transform: translateX(55vw);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  visibility: hidden;
+  width: 50vw;
+}
+.navDropdown .navLink {
+  font-size: 2.5rem;
+}
+
+.revealNav {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  visibility: visible;
 }
 
 .sideNav {
@@ -264,6 +297,7 @@ body {
   left: 0;
   list-style-type: none;
   margin: 0;
+  padding: 0;
   position: absolute;
   top: 50%;
   width: 20%;
@@ -271,12 +305,8 @@ body {
 .contactUl .contactList {
   margin: 1rem;
 }
-
-.scrollWrapper {
-  height: 100vh;
-  overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+.contactUl .icon:hover, .contactUl .icon:focus {
+  color: #9eff7e;
 }
 
 section {
@@ -285,63 +315,6 @@ section {
   scroll-padding: 50px;
   scroll-snap-align: start;
   width: 80%;
-}
-
-.projectContainer {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.projectCard {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
-}
-
-.welcome {
-  width: 100%;
-  margin-top: 0;
-  padding-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: unset;
-  z-index: -5;
-}
-.welcome .welcome canvas {
-  height: 100%;
-  position: relative;
-  top: 0px;
-  width: 100%;
-  z-index: -100;
-}
-
-.profileImage {
-  width: 25%;
-}
-
-h2, h3 {
-  color: #9eff7e;
 }
 
 .articleContainer {
@@ -356,6 +329,52 @@ h2, h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem;
+}
+
+.scrollWrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+}
+
+.background {
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -5;
+}
+
+.welcome {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+  max-width: unset;
+  padding-top: 0;
+  position: relative;
+  width: 100%;
+  z-index: -5;
+}
+.welcome .welcome canvas {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: -100;
+}
+
+.profileImage {
+  width: 25%;
 }
 
 .flexContainer {
@@ -383,10 +402,25 @@ h2, h3 {
   font-size: 6em;
 }
 
-.background {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: -5;
+.projectContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.projectCard {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
