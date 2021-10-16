@@ -184,9 +184,47 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+html {
+  font-size: 125%;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Abril Fatface", cursive;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6rem;
+}
+h1 span {
+  color: #9eff7e;
+}
+
+a {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.srOnly:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
 body {
   background-color: #272727;
   color: #d9d9d9;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .topNav {
@@ -206,29 +244,32 @@ body {
 
 .sideNav {
   position: absolute;
-  right: 20px;
+  right: 2rem;
   top: 50%;
+}
+
+.navContainer {
+  list-style-type: none;
 }
 
 .contactUl {
-  bottom: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  left: 40%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  left: 0;
   list-style-type: none;
-  position: absolute;
-  width: 20%;
-}
-
-.verticalTitle {
-  left: 0px;
+  margin: 0;
   position: absolute;
   top: 50%;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  width: 20%;
+}
+.contactUl .contactList {
+  margin: 1rem;
 }
 
 .scrollWrapper {
@@ -239,27 +280,28 @@ body {
 }
 
 section {
+  margin: auto;
+  min-height: 100vh;
+  scroll-padding: 50px;
   scroll-snap-align: start;
-  padding: 100px 0;
-  margin: 400px auto;
   width: 80%;
 }
 
 .projectContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 0 auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
-  width: 90%;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .projectCard {
@@ -270,18 +312,32 @@ section {
 
 .welcome {
   width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: unset;
+  z-index: -5;
+}
+.welcome .welcome canvas {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  z-index: -100;
 }
 
 .profileImage {
   width: 25%;
-}
-
-.welcome canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0px;
-  z-index: -100;
 }
 
 h2, h3 {
@@ -289,17 +345,48 @@ h2, h3 {
 }
 
 .articleContainer {
-  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
 }
 
 .skillBox {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
-  margin: 20px;
+  margin: 0.5rem;
   text-align: center;
 }
 
 .techIcon {
   font-size: 6em;
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -5;
 }

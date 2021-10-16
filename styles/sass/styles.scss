@@ -1,8 +1,34 @@
 @import '_setup';
+html {
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+
+    span {
+        color: #9eff7e;
+    }
+}
+
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+.srOnly:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 body {
     background-color: #272727;
     color: #d9d9d9;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .topNav {
@@ -20,25 +46,28 @@ body {
 
 .sideNav {
     position: absolute;
-    right: 20px;
+    right: 2rem;
     top: 50%;
+}
+
+.navContainer {
+    list-style-type: none;
 }
 
 .contactUl {
-    bottom: 0px;
     display: flex;
-    justify-content: space-around;
-    left: 40%;
+    flex-direction: column;
+    font-size: 1.5rem;
+    left: 0;
     list-style-type: none;
-    position: absolute;
-    width: 20%;
-}
-
-.verticalTitle {
-    left: 0px;
+    margin: 0;
     position: absolute;
     top: 50%;
-    transform: rotate(270deg);
+    width: 20%;
+
+    .contactList {
+        margin: 1rem;
+    }
 }
 
 .scrollWrapper {
@@ -48,23 +77,24 @@ body {
 }
 
 section {
+    margin: auto;
+    min-height: 100vh;
+    scroll-padding: 50px;
     scroll-snap-align: start;
-    padding: 100px 0;
-    margin: 400px auto;
     width: 80%;
 }
 
 .projectContainer {
+    align-items: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 auto;
-    align-items: center;
     height: 100%;
-    width: 90%;
     justify-content: space-evenly;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .projectCard {
@@ -73,34 +103,66 @@ section {
 
 .welcome {
     width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: unset;
+    z-index: -5;
+
+    .welcome canvas {
+        height: 100%;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        z-index: -100;
+    }
+
 }
 
 .profileImage {
     width: 25%;
 }
 
-.welcome canvas {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 0px;
-    z-index: -100;
-}
+
 
 h2,h3 {
     color: #9eff7e;
 }
 
 .articleContainer {
-    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 0;
+} 
 
 .skillBox {
     flex: 0 1 25%;
-    margin: 20px;
+    margin: 0.5rem;
     text-align: center;
 }
 
 .techIcon {
     font-size: 6em;
+}
+
+
+.background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -5;
 }
