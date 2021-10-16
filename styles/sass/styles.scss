@@ -1,0 +1,106 @@
+@import '_setup';
+
+body {
+    background-color: #272727;
+    color: #d9d9d9;
+}
+
+.topNav {
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+}
+
+.sideNav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.contactUl {
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    left: 40%;
+    list-style-type: none;
+    position: absolute;
+    width: 20%;
+}
+
+.verticalTitle {
+    left: 0px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(270deg);
+}
+
+.scrollWrapper {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+    padding: 100px 0;
+    margin: 400px auto;
+    width: 80%;
+}
+
+.projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.projectCard {
+    flex: 0 1 25%;
+}
+
+.welcome {
+    width: 100%;
+}
+
+.profileImage {
+    width: 25%;
+}
+
+.welcome canvas {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    z-index: -100;
+}
+
+h2,h3 {
+    color: #9eff7e;
+}
+
+.articleContainer {
+    text-align: center;
+}
+
+.skillBox {
+    flex: 0 1 25%;
+    margin: 20px;
+    text-align: center;
+}
+
+.techIcon {
+    font-size: 6em;
+}
