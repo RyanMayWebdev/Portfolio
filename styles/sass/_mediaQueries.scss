@@ -1,0 +1,19 @@
+@media (max-width:1280px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .techIcon {
+        font-size: 3rem;
+    }
+
+    .about {
+        .articleContainer {
+            flex-direction: column;
+        }
+
+        .aboutDescription {
+            width: 80%;
+        }
+    }
+}
