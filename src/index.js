@@ -32,7 +32,6 @@ portfolio.getCurrentSlide = () => {
 
     portfolio.scrollWrapper.addEventListener('scroll', () => {
         portfolio.sections.forEach(section => {
-            console.log(Math.floor(portfolio.scrollWrapper.scrollTop))
             if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
                 const sectionID = section.id + 'SideLink';
                 const sideLink = document.querySelectorAll('.sideNavLink');
