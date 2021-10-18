@@ -1,4 +1,5 @@
 @import '_setup';
+@import '_mixins';
 
 
 // =====================
@@ -37,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 6rem;
 
-    span {
+    .name {
         color: #00ffb8;
     }
 }
@@ -51,7 +52,11 @@ h2,h3 {
 // HEADER
 // =====================
 
-.topNav, .sideNav, .contactUl{
+.topNav {
+    z-index: 11;
+}
+
+.sideNav, .contactUl{
     z-index: 10;
 }
 
@@ -64,6 +69,9 @@ h2,h3 {
 }
 
 .navMenu {
+    background-color: #00ffb700;
+    border: none;
+    color: #d9d9d9;
     position:absolute;
     z-index: 1000;
 }
@@ -80,7 +88,7 @@ h2,h3 {
     position: fixed;
     right: 0;
     top: 0;
-    transform: translateX(55vw);
+    transform: translateX(60vw);
     transition: all 2s;
     visibility: hidden;
     width: 50vw;
@@ -132,27 +140,27 @@ h2,h3 {
 
 section {
     background-color: #171717;
+    // scroll-snap-stop: always;
+    bottom: 0;
+    left: 0;
     margin: auto;
     min-height: 100vh;
-    scroll-padding: 10rem;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
     position:sticky;
+    right: 0;
+    // scroll-padding: 10rem;
+    scroll-snap-align: start;
+    top: 0;
 }
 
 .articleContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
-    padding: 2rem;
-    max-width:1440px;
+    justify-content: center;
     margin: 0 auto;
+    max-width:1440px;
+    padding: 2rem;
 }
 
 
@@ -162,7 +170,7 @@ section {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    scroll-snap-stop: always;
+    // scroll-snap-stop: always;
 }
 
 // =====================
@@ -244,15 +252,48 @@ section {
 
 .techIcon {
     font-size: 6em;
+    &:hover {
+        color:#00ffb8;
+    }
 }
 
 // =====================
 // PROJECTS
 // =====================
 
+
+
+.projectLink {
+    background-color: #00ffb8;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    &:hover {
+        color:#171717;
+    }
+}
+
+.outlined {
+    background-color: #171717;
+    border: 1px solid #00ffb8;
+
+    &:hover {
+        color:#00ffb8;
+    }
+}
+
 .projects  {
+    padding: 2rem 2rem 5rem;
     position: relative;
     z-index: 4;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 .projectContainer {
@@ -266,16 +307,63 @@ section {
 }
 
 .projectCard {
+    align-items: center;
+    background-color: #17171775;
     border: 1px solid #00ffb8;
-    padding: 1rem;
-    margin: 1rem;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
     height: 30rem;
-    flex-basis: 20%;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+.projectDescription {
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
 }
 
-.onTop {
-    z-index: 6;
+
+.bubbles {
+    @include setBackground('../images/bubbles.jpg');
 }
+
+.triviaBlitz {
+    @include setBackground('../images/triviaBlitz.jpg');
+}
+.barOne {
+    @include setBackground('../images/barOne.jpg');
+}
+.shutter {
+    @include setBackground('../images/shutter.jpg');
+}
+.movieReel {
+    @include setBackground('../images/movieReel.png');
+}
+.calculator {
+    @include setBackground('../images/calc.png');
+}
+
+
+
+.projectCard:hover, .projectCard:focus-within , .projectCard:focus {
+    background-color: #171717;
+    h3,h4 {
+        visibility: hidden;
+    }
+    .projectDescription {
+        visibility: visible;
+    }
+
+}
+
 
 
 @import '_mediaQueries';

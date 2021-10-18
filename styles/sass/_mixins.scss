@@ -1,0 +1,7 @@
+@mixin setBackground($filePath){
+    background: url($filePath);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 4;
+}
