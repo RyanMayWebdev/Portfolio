@@ -246,6 +246,10 @@ h3 {
   z-index: 10;
 }
 
+.sideNav .fas {
+  color: #00ffb8;
+}
+
 .topNav {
   position: fixed;
   right: 2rem;
@@ -292,8 +296,7 @@ h3 {
   font-size: 2.5rem;
   z-index: 10;
 }
-
-.navLink:after {
+.navDropdown .navLink:after {
   border: none;
   border-top: solid 2px #8cd696;
   bottom: -1rem;
@@ -305,8 +308,7 @@ h3 {
   transition: all 0.5s;
   width: 0%;
 }
-
-.navLink:hover::after {
+.navDropdown .navLink:hover::after {
   width: 100%;
 }
 
