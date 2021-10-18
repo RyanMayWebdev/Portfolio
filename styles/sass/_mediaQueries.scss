@@ -41,6 +41,23 @@
         flex-basis: 100%;
     }
 }
+
+@media (max-height:1023px) {
+
+    section {
+        padding-bottom: 6rem;
+        position: relative;
+    }
+
+    .about {
+        .aboutDescription {
+            margin: 5rem;
+        }
+    }
+}
+
+
+
 @media (max-width: 650px) {
 
     .welcomeHeader {

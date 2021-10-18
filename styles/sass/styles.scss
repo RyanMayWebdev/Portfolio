@@ -30,7 +30,12 @@ body {
     scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Abril Fatface', cursive;
     text-transform: uppercase;
 }
@@ -43,7 +48,8 @@ h1 {
     }
 }
 
-h2,h3 {
+h2,
+h3 {
     color: #00ffb8;
 }
 
@@ -56,7 +62,8 @@ h2,h3 {
     z-index: 11;
 }
 
-.sideNav, .contactUl{
+.sideNav,
+.contactUl {
     z-index: 10;
 }
 
@@ -72,7 +79,7 @@ h2,h3 {
     background-color: #00ffb700;
     border: none;
     color: #d9d9d9;
-    position:absolute;
+    position: absolute;
     z-index: 1000;
 }
 
@@ -92,6 +99,7 @@ h2,h3 {
     transition: all 2s;
     visibility: hidden;
     width: 50vw;
+
     .navLink {
         font-size: 2.5rem;
         z-index: 10;
@@ -130,24 +138,25 @@ h2,h3 {
         margin: 1rem;
     }
 
-    .icon:hover, .icon:focus {
-        color:#00ffb8;
+    .icon:hover,
+    .icon:focus {
+        color: #00ffb8;
     }
 }
+
 // =====================
 // MAIN
 // =====================
 
 section {
     background-color: #171717;
-    // scroll-snap-stop: always;
     bottom: 0;
+    box-shadow: 5px 5px #00ffb8;
     left: 0;
     margin: auto;
     min-height: 100vh;
-    position:sticky;
+    position: sticky;
     right: 0;
-    // scroll-padding: 10rem;
     scroll-snap-align: start;
     top: 0;
 }
@@ -156,10 +165,10 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
+    min-height: 100vh;
     margin: 0 auto;
-    max-width:1440px;
+    max-width: 1440px;
     padding: 2rem;
 }
 
@@ -170,7 +179,6 @@ section {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    // scroll-snap-stop: always;
 }
 
 // =====================
@@ -223,12 +231,13 @@ section {
 
 .about {
     z-index: 2;
+
     .articleContainer {
         flex-direction: row;
-    height: 100vh;
-    justify-content: space-around;
+        justify-content: space-around;
     }
 }
+
 // =====================
 // SKILLS
 // =====================
@@ -236,13 +245,13 @@ section {
     z-index: 3;
 }
 
-.flexContainer{
+.flexContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
-} 
+}
 
 .skillBox {
     margin: 0.5rem;
@@ -252,8 +261,9 @@ section {
 
 .techIcon {
     font-size: 6em;
+
     &:hover {
-        color:#00ffb8;
+        color: #00ffb8;
     }
 }
 
@@ -272,8 +282,9 @@ section {
     font-weight: 600;
     margin: 0.5rem;
     padding: 0.75rem;
+
     &:hover {
-        color:#171717;
+        color: #171717;
     }
 }
 
@@ -282,11 +293,11 @@ section {
     border: 1px solid #00ffb8;
 
     &:hover {
-        color:#00ffb8;
+        color: #00ffb8;
     }
 }
 
-.projects  {
+.projects {
     padding: 2rem 2rem 5rem;
     position: relative;
     z-index: 4;
@@ -323,6 +334,7 @@ section {
         font-size: 3rem;
     }
 }
+
 .projectDescription {
     padding: 2rem;
     position: absolute;
@@ -338,26 +350,35 @@ section {
 .triviaBlitz {
     @include setBackground('./../images/triviaBlitz.JPG');
 }
+
 .barOne {
     @include setBackground('./../images/BarOne.JPG');
 }
+
 .shutter {
     @include setBackground('./../images/shutter.JPG');
 }
+
 .movieReel {
     @include setBackground('./../images/movieReel.PNG');
 }
+
 .calculator {
     @include setBackground('./../images/Calc.PNG');
 }
 
 
 
-.projectCard:hover, .projectCard:focus-within , .projectCard:focus {
+.projectCard:hover,
+.projectCard:focus-within,
+.projectCard:focus {
     background-color: #171717;
-    h3,h4 {
+
+    h3,
+    h4 {
         visibility: hidden;
     }
+
     .projectDescription {
         visibility: visible;
     }
@@ -367,7 +388,3 @@ section {
 
 
 @import '_mediaQueries';
-
-
-
-

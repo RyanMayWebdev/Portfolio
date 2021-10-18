@@ -215,7 +215,12 @@ body {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Abril Fatface", cursive;
   text-transform: uppercase;
 }
@@ -227,7 +232,8 @@ h1 .name {
   color: #00ffb8;
 }
 
-h2, h3 {
+h2,
+h3 {
   color: #00ffb8;
 }
 
@@ -235,7 +241,8 @@ h2, h3 {
   z-index: 11;
 }
 
-.sideNav, .contactUl {
+.sideNav,
+.contactUl {
   z-index: 10;
 }
 
@@ -321,13 +328,16 @@ h2, h3 {
 .contactUl .contactList {
   margin: 1rem;
 }
-.contactUl .icon:hover, .contactUl .icon:focus {
+.contactUl .icon:hover,
+.contactUl .icon:focus {
   color: #00ffb8;
 }
 
 section {
   background-color: #171717;
   bottom: 0;
+  -webkit-box-shadow: 5px 5px #00ffb8;
+          box-shadow: 5px 5px #00ffb8;
   left: 0;
   margin: auto;
   min-height: 100vh;
@@ -348,10 +358,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 100vh;
   margin: 0 auto;
   max-width: 1440px;
   padding: 2rem;
@@ -416,7 +426,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -581,13 +590,22 @@ section {
   z-index: 4;
 }
 
-.projectCard:hover, .projectCard:focus-within, .projectCard:focus {
+.projectCard:hover,
+.projectCard:focus-within,
+.projectCard:focus {
   background-color: #171717;
 }
-.projectCard:hover h3, .projectCard:hover h4, .projectCard:focus-within h3, .projectCard:focus-within h4, .projectCard:focus h3, .projectCard:focus h4 {
+.projectCard:hover h3,
+.projectCard:hover h4,
+.projectCard:focus-within h3,
+.projectCard:focus-within h4,
+.projectCard:focus h3,
+.projectCard:focus h4 {
   visibility: hidden;
 }
-.projectCard:hover .projectDescription, .projectCard:focus-within .projectDescription, .projectCard:focus .projectDescription {
+.projectCard:hover .projectDescription,
+.projectCard:focus-within .projectDescription,
+.projectCard:focus .projectDescription {
   visibility: visible;
 }
 
@@ -632,6 +650,16 @@ section {
   .projectCard {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+}
+@media (max-height: 1023px) {
+  section {
+    padding-bottom: 6rem;
+    position: relative;
+  }
+
+  .about .aboutDescription {
+    margin: 5rem;
   }
 }
 @media (max-width: 650px) {
