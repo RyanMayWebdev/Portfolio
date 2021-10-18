@@ -212,7 +212,6 @@ body {
   background-color: #171717;
   color: #d9d9d9;
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -230,6 +229,10 @@ h1 {
 }
 h1 .name {
   color: #00ffb8;
+}
+
+h2 {
+  font-size: 3rem;
 }
 
 h2,
@@ -416,7 +419,6 @@ section {
   max-width: unset;
   padding-top: 0;
   width: 100%;
-  z-index: 1;
 }
 .welcome .welcome canvas {
   height: 100%;
@@ -436,9 +438,6 @@ section {
   width: 50%;
 }
 
-.about {
-  z-index: 2;
-}
 .about .articleContainer {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -446,10 +445,6 @@ section {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-.skills {
-  z-index: 3;
 }
 
 .flexContainer {
@@ -502,8 +497,8 @@ section {
 
 .projects {
   padding: 2rem 2rem 5rem;
+  scrollbar-color: rgba(255, 255, 255, 0);
   position: relative;
-  z-index: 4;
 }
 .projects h2 {
   text-align: center;
@@ -530,7 +525,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #17171775;
+  background-color: #171717a1;
   border: 1px solid #00ffb8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,60 +555,6 @@ section {
   visibility: hidden;
 }
 
-.bubbles {
-  background: url("./../images/bubbles.JPG");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
-.triviaBlitz {
-  background: url("./../images/triviaBlitz.JPG");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
-.barOne {
-  background: url("./../images/BarOne.JPG");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
-.shutter {
-  background: url("./../images/shutter.JPG");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
-.movieReel {
-  background: url("./../images/movieReel.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
-.calculator {
-  background: url("./../images/calc.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 4;
-}
-
 .projectCard:hover,
 .projectCard:focus-within,
 .projectCard:focus {
@@ -633,6 +574,59 @@ section {
   visibility: visible;
 }
 
+.onTop {
+  z-index: 4;
+}
+
+@media (min-width: 1024px) {
+  .bubbles {
+    background: url("./../images/bubbles.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .triviaBlitz {
+    background: url("./../images/triviaBlitz.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .barOne {
+    background: url("./../images/BarOne.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .shutter {
+    background: url("./../images/shutter.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .movieReel {
+    background: url("./../images/movieReel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .calculator {
+    background: url("./../images/calc.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
 @media (max-width: 1800px) {
   .projectCard {
     -ms-flex-preferred-size: 40%;

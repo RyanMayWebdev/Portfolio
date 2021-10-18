@@ -18,37 +18,37 @@
 
     <header>
         <nav class="topNav">
-            <button class="fas fa-bars navMenu" id="menuDrop" role="navigation"></button>
+            <button class="fas fa-bars navMenu" id="menuDrop" role="navigation" tabindex="1"></button>
             <ul class="navDropdown" id="navDropdown">
-                <li><a class="navLink" href="#about">About</a></li>
-                <li><a class="navLink" href="#skills">Skills</a></li>
-                <li><a class="navLink" href="#projects">Projects</a></li>
-                <li><a class="navLink" href="#contact">Contact</a></li>
+                <li><a class="navLink" href="#about" tabindex="2">About</a></li>
+                <li><a class="navLink" href="#skills" tabindex="3">Skills</a></li>
+                <li><a class="navLink" href="#projects" tabindex="4">Projects</a></li>
+                <li><a class="navLink" href="#contact" tabindex="5">Contact</a></li>
             </ul>
         </nav>
-        <nav class="sideNav">
-            <ul class="navContainer">
-                <li><a class="navLink sideNavLink" id="welcomeSideLink" href="#welcome"><i class="fas fa-circle"></i></a></li>
-                <li><a class="navLink sideNavLink" id="aboutSideLink" href="#about"><i class="far fa-circle"></i></a></li>
-                <li><a class="navLink sideNavLink" id="skillsSideLink" href="#skills"><i class="far fa-circle"></i></a></li>
-                <li><a class="navLink sideNavLink" id="projectsSideLink" href="#projects"><i class="far fa-circle"></i></a></li>
+        <nav class="sideNav" tabindex="6">
+            <ul class="navContainer"> 
+                <li><a class="navLink sideNavLink" id="welcomeSideLink" href="#welcome" tabindex="7" ><i class="fas fa-circle"></i><p class="srOnly">To welcome page</p></a></li>
+                <li><a class="navLink sideNavLink" id="aboutSideLink" href="#about" tabindex="8"><i class="far fa-circle"></i><p class="srOnly">About</p></a></li>
+                <li><a class="navLink sideNavLink" id="skillsSideLink" href="#skills" tabindex="9"><i class="far fa-circle"></i><p class="srOnly">Skills</p></a></li>
+                <li><a class="navLink sideNavLink" id="projectsSideLink" href="#projects" tabindex="10"><i class="far fa-circle"></i><p class="srOnly">Projects</p></a></li>
             </ul>
         </nav>
-        <ul class="contactUl">
+        <ul class="contactUl" tabindex="11">
             <li class="contactList">
-                <a class="contactListItem" href="https://github.com/RyanMayWebdev" target="_blank"><i
+                <a class="contactListItem" href="https://github.com/RyanMayWebdev" target="_blank" tabindex="12"><i
                         class="fab fa-github icon"></i>
                     <p class="srOnly">GitHub</p>
                 </a>
             </li>
             <li class="contactList">
-                <a class="contactListItem" href="https://www.linkedin.com/in/ryan-may-b665a2105/" target="_blank"><i
+                <a class="contactListItem" href="https://www.linkedin.com/in/ryan-may-b665a2105/" target="_blank" tabindex="13"><i
                         class="fab fa-linkedin icon"></i>
                     <p class="srOnly">LinkedIn</p>
                 </a>
             </li>
             <li class="contactList">
-                <a class="contactListItem" href="mailto:ryan777may@gmail.com"><i class="fas fa-envelope icon"></i>
+                <a class="contactListItem" href="mailto:ryan777may@gmail.com" tabindex="14"><i class="fas fa-envelope icon"></i>
                     <p class="srOnly">Email</p>
                 </a>
             </li>
@@ -162,7 +162,7 @@
             <div class="projectContainer">
 
 
-                <article class="fade projectCard" tabindex="0" id="bubbles">
+                <article class="fade projectCard" tabindex="15" id="bubbles">
 
                     <h3>Bubbles</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -178,15 +178,15 @@
                             other channels. Additionally, I've used the react-input-emoji package to allow users to
                             input emojis into there messages. Messages are also filtered for profanity.
                         </p>
-                        <a class="projectLink" href="https://bubbles-chat.netlify.app/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://bubbles-chat.netlify.app/" target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/Project3"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/Project3"
                             target=" _blank">GitHub
                             Repo</a>
                     </div>
                 </article>
 
-                <article class="fade projectCard" tabindex="0" id="triviaBlitz">
+                <article class="fade projectCard" tabindex="16" id="triviaBlitz">
 
                     <h3>Trivia Blitz</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS <span
@@ -202,15 +202,15 @@
                             answers that are randomized. A timer and score tracker are present, and score is
                             rewarded based on a correct answer and time remaining.
                         </p>
-                        <a class="projectLink" href="https://triviablitz.github.io/triviaBlitz/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://triviablitz.github.io/triviaBlitz/" target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/triviablitz/triviaBlitz"
+                        <a class="outlined projectLink"  tabindex="0" href="https://github.com/triviablitz/triviaBlitz"
                             target=" _blank">GitHub
                             Repo</a>
                     </div>
                 </article>
 
-                <article class="fade projectCard" tabindex="0" id="barOne">
+                <article class="fade projectCard" tabindex="17" id="barOne">
 
                     <h3>Bar One</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS </h4>
@@ -231,14 +231,14 @@
                             was set to 125% as a base or 20px.
                         </p>
                         </p>
-                        <a class="projectLink" href="https://projectone.ryanmaycodes.com/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://projectone.ryanmaycodes.com/" target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/RyanMayProjectOne"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/RyanMayProjectOne"
                             target="_blank">GitHub
                             Repo</a>
                     </div>
                 </article>
-                <article class="fade projectCard" tabindex="0" id="shutter">
+                <article class="fade projectCard" tabindex="18" id="shutter">
 
                     <h3>Shutter</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3</h4>
@@ -250,15 +250,15 @@
                             Font-size had a base value of 125%, images have descriptive alt text and any inputs
                             have labels.
                         </p>
-                        <a class="projectLink" href="https://ryanmaywebdev.github.io/ShutterAssignment/"
+                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/ShutterAssignment/"
                             target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/ShutterAssignment"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/ShutterAssignment"
                             target="_blank">GitHub
                             Repo</a>
                     </div>
                 </article>
-                <article class="fade projectCard" tabindex="0" id="movieReel">
+                <article class="fade projectCard" tabindex="19" id="movieReel">
 
                     <h3>Movie Reel</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -275,15 +275,15 @@
                             using
                             the same API to get the movie trailer web address.
                         </p>
-                        <a class="projectLink" href="https://ryanmaywebdev.github.io/APIProject/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/APIProject/" target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/APIProject"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/APIProject"
                             target="_blank">GitHub
                             Repo</a>
                     </div>
                 </article>
 
-                <article class="fade projectCard" tabindex="0" id="calculator">
+                <article class="fade projectCard" tabindex="20" id="calculator">
 
                     <h3>Calculator</h3>
                     <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
@@ -297,9 +297,9 @@
                             user
                             input. Additionally, some small animations are done by toggling classes with jQuery.
                         </p>
-                        <a class="projectLink" href="https://ryanmaywebdev.github.io/Calculator/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/Calculator/" target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" href="https://github.com/RyanMayWebdev/Calculator"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/Calculator"
                             target="_blank">GitHub
                             Repo</a>
                     </div>
