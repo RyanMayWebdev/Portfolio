@@ -18,14 +18,14 @@ portfolio.nav = () => {
     portfolio.navLinks.forEach(link => {
         link.addEventListener('click', () => {
             portfolio.scrollWrapper.scrollTo(0, 0);
-        })
-    })
+        });
+    });
     const sideNavLinks = portfolio.sideNav.querySelectorAll('.navLink');
     sideNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             link.innerHTML = '<i class="fas fa-circle"></i>';
-        })
-    })
+        });
+    });
 };
 
 portfolio.getCurrentSlide = () => {
@@ -52,12 +52,12 @@ portfolio.getCurrentSlide = () => {
 portfolio.scroll = () => {
     document.addEventListener('wheel', (e) => {
         if (e.deltaY < 0) {
-            const yPos = portfolio.scrollWrapper.scrollTop
-            const newY = yPos - 1375;
+            const yPos = portfolio.scrollWrapper.scrollTop;
+            const newY = yPos - 1350;
             portfolio.scrollWrapper.scrollTo(0, newY);
-        }
-    })
-}
+        };
+    });
+};
 
 
 
@@ -81,7 +81,7 @@ portfolio.projectHover = () => {
             className = e.target.id;
         } else if (e.path[2].id) {
             className = e.path[2].id;
-        }
+        };
         portfolio.projectSection.classList.remove(className);
     };
 
@@ -109,13 +109,17 @@ portfolio.projectHover = () => {
             exited(e);
         });
     });
-}
+};
 
 portfolio.init = () => {
+    console.log(navigator.userAgent)
     portfolio.nav();
     portfolio.projectHover();
     portfolio.getCurrentSlide();
-    portfolio.scroll();
-}
+    if (navigator.userAgent.includes('Mozilla') && !navigator.userAgent.includes('Chrome')){
+        portfolio.scroll();
+    };
+
+};
 
 portfolio.init();
