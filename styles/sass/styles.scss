@@ -27,7 +27,6 @@ body {
     background-color: #171717;
     color: #d9d9d9;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
 }
 
 h1,
@@ -46,6 +45,10 @@ h1 {
     .name {
         color: #00ffb8;
     }
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 h2,
@@ -230,7 +233,6 @@ section {
     max-width: unset;
     padding-top: 0;
     width: 100%;
-    z-index: 1;
 
     .welcome canvas {
         height: 100%;
@@ -256,7 +258,6 @@ section {
 }
 
 .about {
-    z-index: 2;
 
     .articleContainer {
         flex-direction: row;
@@ -267,9 +268,6 @@ section {
 // =====================
 // SKILLS
 // =====================
-.skills {
-    z-index: 3;
-}
 
 .flexContainer {
     display: flex;
@@ -325,8 +323,8 @@ section {
 
 .projects {
     padding: 2rem 2rem 5rem;
+    scrollbar-color: rgba(255, 255, 255, 0);
     position: relative;
-    z-index: 4;
 
     h2 {
         text-align: center;
@@ -345,7 +343,7 @@ section {
 
 .projectCard {
     align-items: center;
-    background-color: #17171775;
+    background-color: #171717a1;
     border: 1px solid #00ffb8;
     display: flex;
     flex-basis: 30%;
@@ -369,29 +367,6 @@ section {
 }
 
 
-.bubbles {
-    @include setBackground('./../images/bubbles.JPG');
-}
-
-.triviaBlitz {
-    @include setBackground('./../images/triviaBlitz.JPG');
-}
-
-.barOne {
-    @include setBackground('./../images/BarOne.JPG');
-}
-
-.shutter {
-    @include setBackground('./../images/shutter.JPG');
-}
-
-.movieReel {
-    @include setBackground('./../images/movieReel.jpg');
-}
-
-.calculator {
-    @include setBackground('./../images/calc.jpg');
-}
 
 
 
@@ -411,6 +386,10 @@ section {
 
 }
 
+
+.onTop {
+    z-index: 4;
+}
 
 
 @import '_mediaQueries';
