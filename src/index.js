@@ -32,14 +32,13 @@ portfolio.getCurrentSlide = () => {
 
     portfolio.scrollWrapper.addEventListener('scroll', () => {
         portfolio.sections.forEach(section => {
-            // console.log(section.offsetTop)
-            if (section.offsetTop == portfolio.scrollWrapper.scrollTop) {
+            if (section.offsetTop === portfolio.scrollWrapper.scrollTop) {
                 const sectionID = section.id + 'SideLink';
                 const sideLink = document.querySelectorAll('.sideNavLink');
                 sideLink.forEach(link => {
                     link.innerHTML = '<i class="far fa-circle"></i>';
                     if (link.id == sectionID) {
-                        link.innerHTML = `<i class="fas fa-circle"></i><p class="srOnly">${section.id}</p>`;
+                        link.innerHTML = `<i class="fas fa-circle"></i>`;
                     };
                 });
             };
@@ -112,7 +111,6 @@ portfolio.projectHover = () => {
 };
 
 portfolio.init = () => {
-    console.log(navigator.userAgent)
     portfolio.nav();
     portfolio.projectHover();
     portfolio.getCurrentSlide();
