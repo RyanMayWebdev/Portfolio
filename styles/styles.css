@@ -534,7 +534,7 @@ section {
 }
 
 .bubbles {
-  background: url(".././images/bubbles.jpg");
+  background: url("./../images/bubbles.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -542,7 +542,7 @@ section {
 }
 
 .triviaBlitz {
-  background: url(".././images/triviaBlitz.jpg");
+  background: url("./../images/triviaBlitz.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -550,7 +550,7 @@ section {
 }
 
 .barOne {
-  background: url(".././images/barOne.jpg");
+  background: url("./../images/barOne.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -558,7 +558,7 @@ section {
 }
 
 .shutter {
-  background: url(".././images/shutter.jpg");
+  background: url("./../images/shutter.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -566,7 +566,7 @@ section {
 }
 
 .movieReel {
-  background: url(".././images/movieReel.png");
+  background: url("./../images/movieReel.png");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -574,7 +574,7 @@ section {
 }
 
 .calculator {
-  background: url(".././images/calc.png");
+  background: url("./../images/calc.png");
   background-position: center;
   background-size: cover;
   position: relative;
