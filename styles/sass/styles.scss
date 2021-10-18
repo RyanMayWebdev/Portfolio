@@ -332,23 +332,23 @@ section {
 
 
 .bubbles {
-    @include setBackground('.././images/bubbles.jpg');
+    @include setBackground('./../images/bubbles.jpg');
 }
 
 .triviaBlitz {
-    @include setBackground('.././images/triviaBlitz.jpg');
+    @include setBackground('./../images/triviaBlitz.jpg');
 }
 .barOne {
-    @include setBackground('.././images/barOne.jpg');
+    @include setBackground('./../images/barOne.jpg');
 }
 .shutter {
-    @include setBackground('.././images/shutter.jpg');
+    @include setBackground('./../images/shutter.jpg');
 }
 .movieReel {
-    @include setBackground('.././images/movieReel.png');
+    @include setBackground('./../images/movieReel.png');
 }
 .calculator {
-    @include setBackground('.././images/calc.png');
+    @include setBackground('./../images/calc.png');
 }
 
 
