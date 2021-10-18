@@ -550,7 +550,7 @@ section {
 }
 
 .barOne {
-  background: url("./../images/barOne.JPG");
+  background: url("./../images/BarOne.JPG");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -574,7 +574,7 @@ section {
 }
 
 .calculator {
-  background: url("./../images/calc.PNG");
+  background: url("./../images/Calc.PNG");
   background-position: center;
   background-size: cover;
   position: relative;
