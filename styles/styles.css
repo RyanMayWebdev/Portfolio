@@ -288,8 +288,26 @@ h3 {
   width: 50vw;
 }
 .navDropdown .navLink {
+  position: relative;
   font-size: 2.5rem;
   z-index: 10;
+}
+
+.navLink:after {
+  border: none;
+  border-top: solid 2px #8cd696;
+  bottom: -1rem;
+  content: "";
+  height: 15px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  width: 0%;
+}
+
+.navLink:hover::after {
+  width: 100%;
 }
 
 .revealNav {
@@ -542,7 +560,8 @@ section {
 
 .bubbles {
   background: url("./../images/bubbles.JPG");
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;
@@ -550,7 +569,8 @@ section {
 
 .triviaBlitz {
   background: url("./../images/triviaBlitz.JPG");
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;
@@ -558,7 +578,8 @@ section {
 
 .barOne {
   background: url("./../images/BarOne.JPG");
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;
@@ -566,23 +587,26 @@ section {
 
 .shutter {
   background: url("./../images/shutter.JPG");
-  background-position: center;
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;
 }
 
 .movieReel {
-  background: url("./../images/movieReel.PNG");
-  background-position: center;
+  background: url("./../images/movieReel.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;
 }
 
 .calculator {
-  background: url("./../images/Calc.PNG");
-  background-position: center;
+  background: url("./../images/calc.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 4;

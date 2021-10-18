@@ -101,10 +101,28 @@ h3 {
     width: 50vw;
 
     .navLink {
+        position: relative;
         font-size: 2.5rem;
         z-index: 10;
     }
 }
+
+.navLink:after {
+    border: none;
+    border-top: solid 2px #8cd696;
+    bottom: -1rem;
+    content: "";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    transition: all 0.5s;
+    width: 0%;
+}
+
+.navLink:hover::after {
+    width: 100%;
+}
+
 
 .revealNav {
     transform: translateX(0px);
@@ -359,11 +377,11 @@ section {
 }
 
 .movieReel {
-    @include setBackground('./../images/movieReel.PNG');
+    @include setBackground('./../images/movieReel.jpg');
 }
 
 .calculator {
-    @include setBackground('./../images/Calc.PNG');
+    @include setBackground('./../images/calc.jpg');
 }
 
 
