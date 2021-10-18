@@ -671,7 +671,7 @@ section {
 }
 @media (max-height: 1023px) {
   section {
-    padding-bottom: 15rem;
+    padding-bottom: 10rem;
     position: relative;
   }
 
@@ -692,6 +692,10 @@ section {
   }
 }
 @media (max-width: 474px) {
+  h2 {
+    font-size: 2rem;
+  }
+
   .skillBox {
     margin: 0.2rem;
     width: 40%;
