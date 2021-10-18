@@ -18,7 +18,7 @@
 
     <header>
         <nav class="topNav">
-            <i class="fas fa-bars navMenu" id="menuDrop"></i>
+            <button class="fas fa-bars navMenu" id="menuDrop" role="navigation"></button>
             <ul class="navDropdown" id="navDropdown">
                 <li><a class="navLink" href="#about">About</a></li>
                 <li><a class="navLink" href="#skills">Skills</a></li>
@@ -37,15 +37,20 @@
         <ul class="contactUl">
             <li class="contactList">
                 <a class="contactListItem" href="https://github.com/RyanMayWebdev" target="_blank"><i
-                        class="fab fa-github icon"></i><p class="srOnly">GitHub</p></a>
+                        class="fab fa-github icon"></i>
+                    <p class="srOnly">GitHub</p>
+                </a>
             </li>
             <li class="contactList">
                 <a class="contactListItem" href="https://www.linkedin.com/in/ryan-may-b665a2105/" target="_blank"><i
-                        class="fab fa-linkedin icon"></i><p class="srOnly">LinkedIn</p></a>
+                        class="fab fa-linkedin icon"></i>
+                    <p class="srOnly">LinkedIn</p>
+                </a>
             </li>
             <li class="contactList">
-                <a class="contactListItem" href="mailto:ryan777may@gmail.com"><i
-                        class="fas fa-envelope icon"></i><p class="srOnly">Email</p></a>
+                <a class="contactListItem" href="mailto:ryan777may@gmail.com"><i class="fas fa-envelope icon"></i>
+                    <p class="srOnly">Email</p>
+                </a>
             </li>
         </ul>
     </header>
@@ -55,7 +60,7 @@
         <section id="welcome" class="welcome">
             <div class="background" id="particles-js">
             </div>
-            <h1 class="welcomeHeader">Hello, I'm <span>Ryan</span></h1>
+            <h1 class="welcomeHeader"><span class="hello">Hello,</span> I'm <span class="name">Ryan.</span></h1>
         </section>
 
 
@@ -79,7 +84,7 @@
         </section>
 
 
-        <section id="skills">
+        <section id="skills" class="skills">
             <article class="articleContainer">
                 <h2>Skills <span class="coloured">|</span> Tech</h2>
                 <ul class="flexContainer fade">
@@ -158,14 +163,15 @@
             <div class="projectContainer">
 
 
-                <article class="fade projectCard">
-
+                <article class="fade projectCard" tabindex="0" id="bubbles">
+                    <!-- 
                     <div class="projectImgContainer"><img class="projectImg" src="images/bubbles.JPG"
-                            alt="Image of bubbles chat page"></div>
+                            alt="Image of bubbles chat page"></div> -->
+
+                    <h3>Bubbles</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                        <span class="coloured">|</span> React <span class="coloured">|</span> Firebase </h4>
                     <div class="projectDescription">
-                        <h3>Bubbles</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
-                            <span class="coloured">|</span> React <span class="coloured">|</span> Firebase </h4>
                         <p> Bubbles is a project developed to show my understanding of React and firebase and is a
                             realtime
                             chat app. Upon
@@ -184,14 +190,15 @@
                     </div>
                 </article>
 
-                <article class="fade projectCard right">
+                <article class="fade projectCard" tabindex="0" id="triviaBlitz">
 
-                    <div class="projectImgContainer"><img class="projectImg" src="images/triviaBlitz.JPG"
-                            alt="Image of trivia Blitz site"></div>
+                    <!-- <div class="projectImgContainer"><img class="projectImg" src="images/triviaBlitz.JPG"
+                            alt="Image of trivia Blitz site"></div> -->
+
+                    <h3>Trivia Blitz</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS <span
+                            class="coloured">|</span> JavaScript </h4>
                     <div class="projectDescription">
-                        <h3>Trivia Blitz</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS <span
-                                class="coloured">|</span> JavaScript </h4>
                         <p> A paired programming project with Daniel Noordegraaf using the Open Trivia API. The
                             primary focus of this project was to use Javascript and an API to produce a trivia game.
                             The game allows the user to select a category of questions, the difficulty and the
@@ -210,13 +217,14 @@
                     </div>
                 </article>
 
-                <article class="fade projectCard">
-
+                <article class="fade projectCard" tabindex="0" id="barOne">
+                    <!-- 
                     <div class="projectImgContainer"><img class="projectImg" src="images/BarOne.JPG"
-                            alt="Image of Bar-One website"></div>
+                            alt="Image of Bar-One website"></div> -->
+
+                    <h3>Bar One</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS </h4>
                     <div class="projectDescription">
-                        <h3>Bar One</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> SASS </h4>
                         <p> This is a 3 page website that was created based on a provided PSD. Only the desktop
                             view was provided and the mobile view was left for me to decide what would look and
                             function best.</p>
@@ -240,13 +248,14 @@
                             Repo</a>
                     </div>
                 </article>
-                <article class="fade projectCard right">
-
+                <article class="fade projectCard" tabindex="0" id="shutter">
+                    <!-- 
                     <div class="projectImgContainer"><img class="projectImg" src="images/shutter.JPG"
-                            alt="Image of Shutter website"></div>
+                            alt="Image of Shutter website"></div> -->
+
+                    <h3>Shutter</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3</h4>
                     <div class="projectDescription">
-                        <h3>Shutter</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3</h4>
                         <p> A single page PSD conversion. This project was to be done in only HTML and CSS. A
                             desktop and mobile design were provided, along with a styling guide for specific
                             font's and colours. This site is both fully responsive, using media queries and
@@ -262,14 +271,15 @@
                             Repo</a>
                     </div>
                 </article>
-                <article class="fade projectCard">
-
+                <article class="fade projectCard" tabindex="0" id="movieReel">
+                    <!-- 
                     <div class="projectImgContainer"><img class="projectImg" src="images/movieReel.PNG"
-                            alt="Movie Reel site image"></div>
+                            alt="Movie Reel site image"></div> -->
+
+                    <h3>Movie Reel</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                        <span class="coloured">|</span> jQuery</h4>
                     <div class="projectDescription">
-                        <h3>Movie Reel</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
-                            <span class="coloured">|</span> jQuery</h4>
                         <p> A project made to demonstrate working with API's. This site helps users figure out what
                             movie to watch. Enter in a genre and release year or check off new release and
                             then let the code do the work. Alternatively, you can search by full or partial titles.
@@ -289,14 +299,15 @@
                     </div>
                 </article>
 
-                <article class="fade projectCard right">
-
+                <article class="fade projectCard" tabindex="0" id="calculator">
+                    <!-- 
                     <div class="projectImgContainer"><img class="projectImg" src="images/Calc.PNG"
-                            alt="calculator site Image"></div>
+                            alt="calculator site Image"></div> -->
+
+                    <h3>Calculator</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                        <span class="coloured">|</span> jQuery</h4>
                     <div class="projectDescription">
-                        <h3>Calculator</h3>
-                        <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
-                            <span class="coloured">|</span> jQuery</h4>
                         <p> A simple Calculator to show off working with JQuery. Uses Jquery to listen for user
                             input by
                             clicking the calculator buttons or using regex to check keyboard inputs matching numbers

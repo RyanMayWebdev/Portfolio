@@ -1,3 +1,15 @@
+@media (max-width: 1800px) {
+    .projectCard {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .projectCard {
+        flex-basis: 50%;
+    }
+}
+
 @media (max-width:1280px) {
     h1 {
         font-size: 3rem;
@@ -17,3 +29,115 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .projectCard {
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .projectCard {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 650px) {
+
+    .welcomeHeader {
+        .hello {
+            display: block;
+        }
+    }
+
+    .projectCard {
+        height: 40rem;
+
+        .projectDescription {
+            padding: 1rem;
+        }
+    }
+}
+
+@media (max-width: 474px) {
+
+    .skillBox {
+        margin: 0.2rem;
+        width: 40%;
+
+        
+        p {
+            word-break: break-all;
+        }
+    }
+
+    .techIcon {
+        font-size: 2rem;
+    }
+
+    .navDropdown {
+        width: unset;
+        left: 0;
+        transform: translateX(100vw);
+    }
+
+    .revealNav {
+        transform: translateX(0px);
+        visibility: visible;
+    
+    }
+
+    .articleContainer {
+        padding: 1rem;
+    }
+
+    .sideNav {
+        right: 1rem;
+    }
+
+    .contactUl {
+        top:unset;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .welcomeHeader {
+        font-size: 2.5rem;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .projectCard {
+        flex-basis: unset;
+        width: 100%;
+
+        h3 {
+            font-size: 1.75rem;
+        }
+    }
+
+    .projectDescription p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 375px) {
+    .projectCard {
+        height: 55rem;
+    }
+
+    .profileImage {
+        width: 80%;
+    }
+
+    .about h2 {
+        margin: 0;
+    }
+}
+

@@ -1,4 +1,5 @@
 @import '_setup';
+@import '_mixins';
 
 
 // =====================
@@ -37,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-size: 6rem;
 
-    span {
+    .name {
         color: #00ffb8;
     }
 }
@@ -52,6 +53,14 @@ h2,h3 {
 // =====================
 
 .topNav {
+    z-index: 11;
+}
+
+.sideNav, .contactUl{
+    z-index: 10;
+}
+
+.topNav {
     position: fixed;
     right: 2rem;
     top: 1rem;
@@ -60,6 +69,9 @@ h2,h3 {
 }
 
 .navMenu {
+    background-color: #00ffb700;
+    border: none;
+    color: #d9d9d9;
     position:absolute;
     z-index: 1000;
 }
@@ -76,12 +88,13 @@ h2,h3 {
     position: fixed;
     right: 0;
     top: 0;
-    transform: translateX(55vw);
+    transform: translateX(60vw);
     transition: all 2s;
     visibility: hidden;
     width: 50vw;
     .navLink {
         font-size: 2.5rem;
+        z-index: 10;
     }
 }
 
@@ -126,27 +139,38 @@ h2,h3 {
 // =====================
 
 section {
+    background-color: #171717;
+    // scroll-snap-stop: always;
+    bottom: 0;
+    left: 0;
     margin: auto;
     min-height: 100vh;
-    scroll-padding: 50px;
+    position:sticky;
+    right: 0;
+    // scroll-padding: 10rem;
     scroll-snap-align: start;
-    width: 80%;
+    top: 0;
 }
 
 .articleContainer {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width:1440px;
     padding: 2rem;
 }
+
+
 
 
 .scrollWrapper {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
+    // scroll-snap-stop: always;
 }
 
 // =====================
@@ -171,9 +195,8 @@ section {
     margin-top: 0;
     max-width: unset;
     padding-top: 0;
-    position: relative;
     width: 100%;
-    z-index: -5;
+    z-index: 1;
 
     .welcome canvas {
         height: 100%;
@@ -199,6 +222,7 @@ section {
 }
 
 .about {
+    z-index: 2;
     .articleContainer {
         flex-direction: row;
     height: 100vh;
@@ -208,6 +232,9 @@ section {
 // =====================
 // SKILLS
 // =====================
+.skills {
+    z-index: 3;
+}
 
 .flexContainer{
     display: flex;
@@ -225,18 +252,53 @@ section {
 
 .techIcon {
     font-size: 6em;
+    &:hover {
+        color:#00ffb8;
+    }
 }
 
 // =====================
 // PROJECTS
 // =====================
 
+
+
+.projectLink {
+    background-color: #00ffb8;
+    border-radius: 15px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    &:hover {
+        color:#171717;
+    }
+}
+
+.outlined {
+    background-color: #171717;
+    border: 1px solid #00ffb8;
+
+    &:hover {
+        color:#00ffb8;
+    }
+}
+
+.projects  {
+    padding: 2rem 2rem 5rem;
+    position: relative;
+    z-index: 4;
+
+    h2 {
+        text-align: center;
+    }
+}
+
 .projectContainer {
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: 100%;
     justify-content: space-evenly;
@@ -245,9 +307,62 @@ section {
 }
 
 .projectCard {
-    flex: 0 1 25%;
+    align-items: center;
+    background-color: #17171775;
+    border: 1px solid #00ffb8;
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    position: relative;
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+.projectDescription {
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
 }
 
+
+.bubbles {
+    @include setBackground('../images/bubbles.jpg');
+}
+
+.triviaBlitz {
+    @include setBackground('../images/triviaBlitz.jpg');
+}
+.barOne {
+    @include setBackground('../images/barOne.jpg');
+}
+.shutter {
+    @include setBackground('../images/shutter.jpg');
+}
+.movieReel {
+    @include setBackground('../images/movieReel.png');
+}
+.calculator {
+    @include setBackground('../images/calc.png');
+}
+
+
+
+.projectCard:hover, .projectCard:focus-within , .projectCard:focus {
+    background-color: #171717;
+    h3,h4 {
+        visibility: hidden;
+    }
+    .projectDescription {
+        visibility: visible;
+    }
+
+}
 
 
 
