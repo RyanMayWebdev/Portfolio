@@ -301,7 +301,7 @@ h3 {
 }
 .navDropdown .navLink:after {
   border: none;
-  border-top: solid 2px #8cd696;
+  border-top: solid 2px #00ffb8;
   bottom: -1rem;
   content: "";
   height: 15px;
@@ -401,7 +401,6 @@ section {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -5;
 }
 
 .welcome {
