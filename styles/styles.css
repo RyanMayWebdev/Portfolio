@@ -204,7 +204,6 @@ ul {
 
 html {
   font-size: 125%;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -541,7 +540,7 @@ section {
 }
 
 .projects {
-  padding: 2rem 2rem 5rem;
+  padding: 2rem 2rem 10rem;
 }
 .projects h2 {
   text-align: center;
@@ -568,7 +567,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #171717a1;
+  background-color: #171717da;
   border: 1px solid #00ffb8;
   display: -webkit-box;
   display: -ms-flexbox;

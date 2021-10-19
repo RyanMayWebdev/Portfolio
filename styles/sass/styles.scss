@@ -8,7 +8,7 @@
 
 html {
     font-size: 125%;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 
@@ -215,7 +215,7 @@ section {
 }
 
 .projects {
-    padding: 2rem 2rem 5rem;
+    padding: 2rem 2rem 10rem;
 
     h2 {
         text-align: center;
@@ -234,7 +234,7 @@ section {
 
 .projectCard {
     align-items: center;
-    background-color: #171717a1;
+    background-color: #171717da;
     border: 1px solid #00ffb8;
     display: flex;
     flex-basis: 30%;

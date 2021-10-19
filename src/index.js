@@ -46,6 +46,7 @@ portfolio.nav = () => {
 portfolio.getCurrentSlide = () => {
     let projectTop = 10000;
     portfolio.scrollWrapper.addEventListener('scroll', () => {
+        portfolio.scrollWrapper.scrollBy(0,0);
         portfolio.sections.forEach(section => {
             if (section.id == 'projects') {
                 projectTop = section.offsetTop
@@ -74,6 +75,7 @@ portfolio.getCurrentSlide = () => {
 // I made a function that listens for mouse wheel up and then moves the position of the scrollWrapper scrollBar
 portfolio.scroll = () => {
     document.addEventListener('wheel', (e) => {
+        portfolio.scrollWrapper.scrollBy(0,0);
         if (e.deltaY < 0) {
             const yPos = portfolio.scrollWrapper.scrollTop;
             const newY = yPos - 1350;
