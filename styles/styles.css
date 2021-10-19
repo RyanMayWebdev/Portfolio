@@ -541,6 +541,7 @@ section {
 
 .projects {
   padding: 2rem 2rem 10rem;
+  position: relative;
 }
 .projects h2 {
   text-align: center;
