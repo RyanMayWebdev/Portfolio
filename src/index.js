@@ -74,6 +74,7 @@ portfolio.getCurrentSlide = () => {
 // I made a function that listens for mouse wheel up and then moves the position of the scrollWrapper scrollBar
 portfolio.scroll = () => {
     document.addEventListener('wheel', (e) => {
+        console.log(e)
         if (e.deltaY < 0) {
             const yPos = portfolio.scrollWrapper.scrollTop;
             const newY = yPos - 1350;
