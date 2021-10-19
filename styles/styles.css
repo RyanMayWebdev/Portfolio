@@ -198,6 +198,10 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
+ul {
+  list-style-type: none;
+}
+
 html {
   font-size: 125%;
   scroll-behavior: smooth;
@@ -241,7 +245,15 @@ h3 {
   color: #00ffb8;
 }
 
+p {
+  line-height: 1.2;
+}
+
 .topNav {
+  position: fixed;
+  right: 2.5rem;
+  top: 1rem;
+  width: 1rem;
   z-index: 11;
 }
 
@@ -254,19 +266,51 @@ h3 {
   color: #00ffb8;
 }
 
-.topNav {
-  position: fixed;
-  right: 2rem;
-  top: 1rem;
-  width: 1rem;
-}
-
 .navMenu {
   background-color: #00ffb700;
   border: none;
   color: #d9d9d9;
+  font-size: 1.5rem;
   position: absolute;
   z-index: 1000;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+.navMenu:hover {
+  color: #00ffb8;
+}
+.navMenu:focus {
+  color: #00ffb8;
+}
+
+@-webkit-keyframes times {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@keyframes times {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+.iconTransition {
+  -webkit-animation: times 1s;
+          animation: times 1s;
 }
 
 .navDropdown {
@@ -283,7 +327,6 @@ h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style-type: none;
   margin: 0;
   position: fixed;
   right: 0;
@@ -328,10 +371,6 @@ h3 {
   top: 45%;
 }
 
-.navContainer {
-  list-style-type: none;
-}
-
 .contactUl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,6 +386,10 @@ h3 {
   padding: 0;
   position: absolute;
   top: 45%;
+}
+.contactUl .icon {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .contactUl .contactList {
   margin: 1rem;
@@ -455,7 +498,6 @@ section {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  list-style-type: none;
   padding: 0;
 }
 
@@ -467,6 +509,8 @@ section {
 
 .techIcon {
   font-size: 6em;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .techIcon:hover {
   color: #00ffb8;
@@ -481,6 +525,8 @@ section {
   font-weight: 600;
   margin: 0.5rem;
   padding: 0.75rem;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
 }
 .projectLink:hover {
   color: #171717;
@@ -496,8 +542,6 @@ section {
 
 .projects {
   padding: 2rem 2rem 5rem;
-  scrollbar-color: rgba(255, 255, 255, 0);
-  position: relative;
 }
 .projects h2 {
   text-align: center;
@@ -543,6 +587,9 @@ section {
   padding: 1rem;
   position: relative;
 }
+.projectCard .coloured {
+  color: #00ffb8;
+}
 .projectCard h3 {
   font-size: 3rem;
 }
@@ -554,11 +601,6 @@ section {
   visibility: hidden;
 }
 
-.projectCard:hover,
-.projectCard:focus-within,
-.projectCard:focus {
-  background-color: #171717;
-}
 .projectCard:hover h3,
 .projectCard:hover h4,
 .projectCard:focus-within h3,
@@ -573,59 +615,48 @@ section {
   visibility: visible;
 }
 
-.onTop {
-  z-index: 4;
+.bubbles {
+  background: url("./../images/bubbles.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-@media (min-width: 1024px) {
-  .bubbles {
-    background: url("./../images/bubbles.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .triviaBlitz {
-    background: url("./../images/triviaBlitz.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .barOne {
-    background: url("./../images/BarOne.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .shutter {
-    background: url("./../images/shutter.JPG");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .movieReel {
-    background: url("./../images/movieReel.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .calculator {
-    background: url("./../images/calc.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+.triviaBlitz {
+  background: url("./../images/triviaBlitz.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.barOne {
+  background: url("./../images/BarOne.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shutter {
+  background: url("./../images/shutter.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.movieReel {
+  background: url("./../images/movieReel.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.calculator {
+  background: url("./../images/calc.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: 1800px) {
   .projectCard {
     -ms-flex-preferred-size: 40%;

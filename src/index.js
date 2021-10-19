@@ -5,24 +5,38 @@ portfolio.navLinks = document.querySelectorAll('.navLink');
 portfolio.scrollWrapper = document.querySelector('.scrollWrapper');
 portfolio.projectSection = document.querySelector('.projects');
 portfolio.projectCards = document.querySelectorAll('.projectCard');
-portfolio.sideNav = document.querySelector('.navContainer');
+portfolio.sideNavLinks = document.querySelectorAll('.sideNavLink');
 portfolio.sections = document.querySelectorAll('section');
 
 
 
 portfolio.nav = () => {
+    const toggleNavIcon = () => {
+        //Add animation class
+        portfolio.dropdown.classList.add('iconTransition');
+        setTimeout(() => {
+            portfolio.dropdown.classList.remove('iconTransition');
+        },1000);
+        //Change icon
+        portfolio.dropdown.classList.toggle('fa-bars');
+        portfolio.dropdown.classList.toggle('fa-times');
+    };
+
     portfolio.dropdown.addEventListener('click', () => {
         portfolio.navMenu.classList.toggle('revealNav');
+        toggleNavIcon();
     });
 
     portfolio.navLinks.forEach(link => {
         link.addEventListener('click', () => {
+            if (link.className != 'navLink sideNavLink'){
+                toggleNavIcon();
+            }
             portfolio.navMenu.classList.remove('revealNav');
             portfolio.scrollWrapper.scrollTo(0, 0);
         });
     });
-    const sideNavLinks = portfolio.sideNav.querySelectorAll('.navLink');
-    sideNavLinks.forEach(link => {
+    portfolio.sideNavLinks.forEach(link => {
         link.addEventListener('click', () => {
             link.innerHTML = '<i class="fas fa-circle"></i>';
         });
@@ -31,7 +45,6 @@ portfolio.nav = () => {
 
 portfolio.getCurrentSlide = () => {
     let projectTop = 10000;
-    const sideLink = document.querySelectorAll('.sideNavLink');
     portfolio.scrollWrapper.addEventListener('scroll', () => {
         portfolio.sections.forEach(section => {
             if (section.id == 'projects') {
@@ -39,14 +52,14 @@ portfolio.getCurrentSlide = () => {
             }
             if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
                 const sectionID = section.id + 'SideLink';
-                sideLink.forEach(link => {
+                portfolio.sideNavLinks.forEach(link => {
                     link.innerHTML = '<i class="far fa-circle"></i>';
                     if (link.id == sectionID) {
                         link.innerHTML = `<i class="fas fa-circle"></i>`;
                     };
                 });
             } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
-                sideLink.forEach(link => {
+                portfolio.sideNavLinks.forEach(link => {
                     link.innerHTML = '<i class="far fa-circle"></i>';
                     if (link.id == 'projectsSideLink') {
                         link.innerHTML = `<i class="fas fa-circle"></i>`;
