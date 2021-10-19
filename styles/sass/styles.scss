@@ -57,123 +57,15 @@ h3 {
     color: #00ffb8;
 }
 
+p {
+    line-height: 1.2;
+}
 
 // =====================
 // HEADER
 // =====================
 
-.topNav {
-    z-index: 11;
-}
-
-.sideNav,
-.contactUl {
-    z-index: 10;
-}
-
-.sideNav {
-    .fas {
-        color:#00ffb8;
-    }
-}
-
-.topNav {
-    position: fixed;
-    right: 2rem;
-    top: 1rem;
-    width: 1rem;
-
-}
-
-.navMenu {
-    background-color: #00ffb700;
-    border: none;
-    color: #d9d9d9;
-    position: absolute;
-    z-index: 1000;
-}
-
-.navDropdown {
-    background-color: #171717;
-    border-left: 1px solid #00ffb8;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: translateX(60vw);
-    transition: all 2s;
-    visibility: hidden;
-    width: 50vw;
-
-    .navLink {
-        position: relative;
-        font-size: 2.5rem;
-        z-index: 10;
-
-        &:after {
-            border: none;
-            border-top: solid 2px #00ffb8;
-            bottom: -1rem;
-            content: "";
-            height: 15px;
-            left: 0;
-            position: absolute;
-            transition: all 0.5s;
-            width: 0%;
-        }
-        
-        &:hover::after {
-            width: 100%;
-        }
-    }
-
-}
-
-
-
-
-.revealNav {
-    transform: translateX(0px);
-    visibility: visible;
-
-}
-
-.sideNav {
-    position: absolute;
-    right: 2rem;
-    top: 45%;
-}
-
-.navContainer {
-    list-style-type: none;
-}
-
-.contactUl {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
-    left: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 45%;
-
-
-    .contactList {
-        margin: 1rem;
-    }
-
-    .icon:hover,
-    .icon:focus {
-        color: #00ffb8;
-    }
-}
+@import '_navigation';
 
 // =====================
 // MAIN
@@ -273,7 +165,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    list-style-type: none;
     padding: 0;
 }
 
@@ -285,6 +176,7 @@ section {
 
 .techIcon {
     font-size: 6em;
+    transition: color 0.5s;
 
     &:hover {
         color: #00ffb8;
@@ -306,6 +198,7 @@ section {
     font-weight: 600;
     margin: 0.5rem;
     padding: 0.75rem;
+    transition: color 0.5s;
 
     &:hover {
         color: #171717;
@@ -323,8 +216,6 @@ section {
 
 .projects {
     padding: 2rem 2rem 5rem;
-    scrollbar-color: rgba(255, 255, 255, 0);
-    position: relative;
 
     h2 {
         text-align: center;
@@ -353,6 +244,11 @@ section {
     margin: 1rem;
     padding: 1rem;
     position: relative;
+    
+
+    .coloured {
+        color:#00ffb8;
+    }
 
     h3 {
         font-size: 3rem;
@@ -364,16 +260,14 @@ section {
     position: absolute;
     text-align: center;
     visibility: hidden;
+
 }
-
-
-
 
 
 .projectCard:hover,
 .projectCard:focus-within,
 .projectCard:focus {
-    background-color: #171717;
+
 
     h3,
     h4 {
@@ -386,10 +280,31 @@ section {
 
 }
 
-
-.onTop {
-    z-index: 4;
+.bubbles {
+    @include setBackground('./../images/bubbles.JPG');
 }
+
+.triviaBlitz {
+    @include setBackground('./../images/triviaBlitz.JPG');
+}
+
+.barOne {
+    @include setBackground('./../images/BarOne.JPG');
+}
+
+.shutter {
+    @include setBackground('./../images/shutter.JPG');
+}
+
+.movieReel {
+    @include setBackground('./../images/movieReel.jpg');
+}
+
+.calculator {
+    @include setBackground('./../images/calc.jpg');
+}
+
+
 
 
 @import '_mediaQueries';

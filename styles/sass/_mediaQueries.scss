@@ -1,29 +1,4 @@
-@media (min-width:1024px) {
-    .bubbles {
-        @include setBackground('./../images/bubbles.JPG');
-    }
-    
-    .triviaBlitz {
-        @include setBackground('./../images/triviaBlitz.JPG');
-    }
-    
-    .barOne {
-        @include setBackground('./../images/BarOne.JPG');
-    }
-    
-    .shutter {
-        @include setBackground('./../images/shutter.JPG');
-    }
-    
-    .movieReel {
-        @include setBackground('./../images/movieReel.jpg');
-    }
-    
-    .calculator {
-        @include setBackground('./../images/calc.jpg');
-    }
-    
-}
+
 
 @media (max-width: 1800px) {
     .projectCard {
