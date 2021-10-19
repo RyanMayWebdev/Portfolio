@@ -138,10 +138,9 @@ portfolio.init = () => {
     portfolio.nav();
     portfolio.projectHover();
     portfolio.getCurrentSlide();
-    if (!"userAgentData" in navigator) {
+    if ("userAgentData" in navigator !== true) {
         portfolio.scroll();
     };
-
 };
 
 portfolio.init();
