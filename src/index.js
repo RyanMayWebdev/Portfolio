@@ -17,6 +17,7 @@ portfolio.nav = () => {
 
     portfolio.navLinks.forEach(link => {
         link.addEventListener('click', () => {
+            portfolio.navMenu.classList.remove('revealNav');
             portfolio.scrollWrapper.scrollTo(0, 0);
         });
     });
@@ -29,24 +30,34 @@ portfolio.nav = () => {
 };
 
 portfolio.getCurrentSlide = () => {
-
+    let projectTop = 10000;
+    const sideLink = document.querySelectorAll('.sideNavLink');
     portfolio.scrollWrapper.addEventListener('scroll', () => {
         portfolio.sections.forEach(section => {
+            if (section.id == 'projects') {
+                projectTop = section.offsetTop
+            }
             if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
                 const sectionID = section.id + 'SideLink';
-                const sideLink = document.querySelectorAll('.sideNavLink');
                 sideLink.forEach(link => {
                     link.innerHTML = '<i class="far fa-circle"></i>';
                     if (link.id == sectionID) {
                         link.innerHTML = `<i class="fas fa-circle"></i>`;
                     };
                 });
-            };
+            } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
+                sideLink.forEach(link => {
+                    link.innerHTML = '<i class="far fa-circle"></i>';
+                    if (link.id == 'projectsSideLink') {
+                        link.innerHTML = `<i class="fas fa-circle"></i>`;
+                    };
+                });
+            }
         });
     });
 };
 
-//Because Mozilla has yet to fix a bug hat prevents scrolling up when using position:sticky and scroll-snap-align 
+//Because Mozilla has yet to fix a bug that prevents scrolling up when using position:sticky and scroll-snap-align 
 // I made a function that listens for mouse wheel up and then moves the position of the scrollWrapper scrollBar
 portfolio.scroll = () => {
     document.addEventListener('wheel', (e) => {
@@ -114,7 +125,7 @@ portfolio.init = () => {
     portfolio.nav();
     portfolio.projectHover();
     portfolio.getCurrentSlide();
-    if (navigator.userAgent.includes('Mozilla') && !navigator.userAgent.includes('Chrome')){
+    if (navigator.userAgent.includes('Mozilla') && !navigator.userAgent.includes('Chrome')) {
         portfolio.scroll();
     };
 
