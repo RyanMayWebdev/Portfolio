@@ -281,6 +281,10 @@ section {
 
 }
 
+.makeupToArt {
+    @include setBackground('./../images/makeupToArt.jpg');
+}
+
 .bubbles {
     @include setBackground('./../images/bubbles.JPG');
 }
