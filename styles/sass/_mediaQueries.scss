@@ -140,7 +140,7 @@
         width: 100%;
 
         h3 {
-            font-size: 1.75rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -163,3 +163,12 @@
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .techIcon:hover,.name,.name::before,.name::after, .navDropdown .navLink:hover, .iconTransition {
+        animation: none;
+    }
+
+    .name::after, .name::before {
+        display: none;
+    }
+  }

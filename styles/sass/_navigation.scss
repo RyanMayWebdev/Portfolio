@@ -35,18 +35,6 @@
     }
 }
 
-@keyframes times {
-    0%{
-        transform: rotate(0deg);
-        opacity: 0;
-    }
-    100% {
-        transform: rotate(360deg);
-        opacity: 1;
-    }
-}
-
-
 .iconTransition {
     animation: times 1s;
 }
@@ -88,6 +76,11 @@
         
         &:hover::after {
             width: 100%;
+        }
+
+        &:hover {
+            animation: textGlitch 2s alternate-reverse;
+            animation-delay: 0s;
         }
     }
 

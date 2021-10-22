@@ -202,6 +202,789 @@ ul {
   list-style-type: none;
 }
 
+@-webkit-keyframes textGlitch {
+  0% {
+    text-shadow: -1px 0 red;
+    left: 2.05px;
+  }
+  10% {
+    text-shadow: -1px 0 red;
+    left: 0.8px;
+  }
+  20% {
+    text-shadow: -3px 0 red;
+    left: 3.45px;
+  }
+  30% {
+    text-shadow: -1px 0 red;
+    left: 3.8px;
+  }
+  40% {
+    text-shadow: 1px 0 red;
+    left: 3.5px;
+  }
+  50% {
+    text-shadow: -2px 0 red;
+    left: 1.75px;
+  }
+  60% {
+    text-shadow: -2px 0 red;
+    left: 4.6px;
+  }
+  70% {
+    text-shadow: -3px 0 red;
+    left: 2.25px;
+  }
+  80% {
+    text-shadow: -2px 0 red;
+    left: 3.35px;
+  }
+  90% {
+    text-shadow: 3px 0 red;
+    left: 1.55px;
+  }
+  100% {
+    text-shadow: 0px 0 red;
+    left: 3px;
+  }
+}
+
+@keyframes textGlitch {
+  0% {
+    text-shadow: -1px 0 red;
+    left: 2.05px;
+  }
+  10% {
+    text-shadow: -1px 0 red;
+    left: 0.8px;
+  }
+  20% {
+    text-shadow: -3px 0 red;
+    left: 3.45px;
+  }
+  30% {
+    text-shadow: -1px 0 red;
+    left: 3.8px;
+  }
+  40% {
+    text-shadow: 1px 0 red;
+    left: 3.5px;
+  }
+  50% {
+    text-shadow: -2px 0 red;
+    left: 1.75px;
+  }
+  60% {
+    text-shadow: -2px 0 red;
+    left: 4.6px;
+  }
+  70% {
+    text-shadow: -3px 0 red;
+    left: 2.25px;
+  }
+  80% {
+    text-shadow: -2px 0 red;
+    left: 3.35px;
+  }
+  90% {
+    text-shadow: 3px 0 red;
+    left: 1.55px;
+  }
+  100% {
+    text-shadow: 0px 0 red;
+    left: 3px;
+  }
+}
+@-webkit-keyframes glitch {
+  0% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@keyframes glitch {
+  0% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.2;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+@-webkit-keyframes glitch1 {
+  0% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(80px, 500px, 24px, 50px);
+  }
+  5% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(9px, 500px, 80px, 50px);
+  }
+  10% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(70px, 500px, 120px, 50px);
+  }
+  15% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(68px, 500px, 100px, 50px);
+  }
+  20% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(84px, 500px, 31px, 50px);
+  }
+  25% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(16px, 500px, 137px, 50px);
+  }
+  30% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(72px, 500px, 40px, 50px);
+  }
+  35% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(31px, 500px, 9px, 50px);
+  }
+  40% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(21px, 500px, 26px, 50px);
+  }
+  45% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(61px, 500px, 18px, 50px);
+  }
+  50% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(49px, 500px, 64px, 50px);
+  }
+  55% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(60px, 500px, 59px, 50px);
+  }
+  60% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(39px, 500px, 132px, 50px);
+  }
+  65% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(43px, 500px, 83px, 50px);
+  }
+  70% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(70px, 500px, 72px, 50px);
+  }
+  75% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(16px, 500px, 135px, 50px);
+  }
+  80% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(81px, 500px, 26px, 50px);
+  }
+  85% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(58px, 500px, 67px, 50px);
+  }
+  90% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(18px, 500px, 62px, 50px);
+  }
+  95% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(2px, 500px, 71px, 50px);
+  }
+  100% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(55px, 500px, 8px, 50px);
+  }
+}
+@keyframes glitch1 {
+  0% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(80px, 500px, 24px, 50px);
+  }
+  5% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(9px, 500px, 80px, 50px);
+  }
+  10% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(70px, 500px, 120px, 50px);
+  }
+  15% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(68px, 500px, 100px, 50px);
+  }
+  20% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(84px, 500px, 31px, 50px);
+  }
+  25% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(16px, 500px, 137px, 50px);
+  }
+  30% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(72px, 500px, 40px, 50px);
+  }
+  35% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(31px, 500px, 9px, 50px);
+  }
+  40% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(21px, 500px, 26px, 50px);
+  }
+  45% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(61px, 500px, 18px, 50px);
+  }
+  50% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(49px, 500px, 64px, 50px);
+  }
+  55% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(60px, 500px, 59px, 50px);
+  }
+  60% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(39px, 500px, 132px, 50px);
+  }
+  65% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(43px, 500px, 83px, 50px);
+  }
+  70% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(70px, 500px, 72px, 50px);
+  }
+  75% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(16px, 500px, 135px, 50px);
+  }
+  80% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(81px, 500px, 26px, 50px);
+  }
+  85% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(58px, 500px, 67px, 50px);
+  }
+  90% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(18px, 500px, 62px, 50px);
+  }
+  95% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(2px, 500px, 71px, 50px);
+  }
+  100% {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    -webkit-text-decoration-style: double;
+            text-decoration-style: double;
+    clip: rect(55px, 500px, 8px, 50px);
+  }
+}
+@-webkit-keyframes glitch2 {
+  0% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(9px, 500px, 73px, 50px);
+  }
+  5% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(73px, 500px, 23px, 50px);
+  }
+  10% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(37px, 500px, 101px, 50px);
+  }
+  15% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(78px, 500px, 130px, 50px);
+  }
+  20% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(26px, 500px, 150px, 50px);
+  }
+  25% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(14px, 500px, 98px, 50px);
+  }
+  30% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(58px, 500px, 64px, 50px);
+  }
+  35% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(90px, 500px, 71px, 50px);
+  }
+  40% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(57px, 500px, 120px, 50px);
+  }
+  45% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(5px, 500px, 1px, 50px);
+  }
+  50% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(94px, 500px, 14px, 50px);
+  }
+  55% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(87px, 500px, 14px, 50px);
+  }
+  60% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(100px, 500px, 138px, 50px);
+  }
+  65% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(92px, 500px, 68px, 50px);
+  }
+  70% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(49px, 500px, 5px, 50px);
+  }
+  75% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(99px, 500px, 37px, 50px);
+  }
+  80% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(29px, 500px, 3px, 50px);
+  }
+  85% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(40px, 500px, 56px, 50px);
+  }
+  90% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(49px, 500px, 128px, 50px);
+  }
+  95% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(28px, 500px, 125px, 50px);
+  }
+  100% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(24px, 500px, 130px, 50px);
+  }
+}
+@keyframes glitch2 {
+  0% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(9px, 500px, 73px, 50px);
+  }
+  5% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(73px, 500px, 23px, 50px);
+  }
+  10% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(37px, 500px, 101px, 50px);
+  }
+  15% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(78px, 500px, 130px, 50px);
+  }
+  20% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(26px, 500px, 150px, 50px);
+  }
+  25% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(14px, 500px, 98px, 50px);
+  }
+  30% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(58px, 500px, 64px, 50px);
+  }
+  35% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(90px, 500px, 71px, 50px);
+  }
+  40% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(57px, 500px, 120px, 50px);
+  }
+  45% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(5px, 500px, 1px, 50px);
+  }
+  50% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(94px, 500px, 14px, 50px);
+  }
+  55% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(87px, 500px, 14px, 50px);
+  }
+  60% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(100px, 500px, 138px, 50px);
+  }
+  65% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(92px, 500px, 68px, 50px);
+  }
+  70% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(49px, 500px, 5px, 50px);
+  }
+  75% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(99px, 500px, 37px, 50px);
+  }
+  80% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(29px, 500px, 3px, 50px);
+  }
+  85% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(40px, 500px, 56px, 50px);
+  }
+  90% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(49px, 500px, 128px, 50px);
+  }
+  95% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(28px, 500px, 125px, 50px);
+  }
+  100% {
+    -webkit-text-decoration-line: line-through;
+            text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+    clip: rect(24px, 500px, 130px, 50px);
+  }
+}
+@-webkit-keyframes times {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes times {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 1;
+  }
+}
 html {
   font-size: 125%;
 }
@@ -237,6 +1020,7 @@ h1 .name {
 
 h2 {
   font-size: 3rem;
+  text-align: center;
 }
 
 h2,
@@ -282,31 +1066,6 @@ p {
   color: #00ffb8;
 }
 
-@-webkit-keyframes times {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 1;
-  }
-}
-
-@keyframes times {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-    opacity: 1;
-  }
-}
 .iconTransition {
   -webkit-animation: times 1s;
           animation: times 1s;
@@ -357,6 +1116,11 @@ p {
 .navDropdown .navLink:hover::after {
   width: 100%;
 }
+.navDropdown .navLink:hover {
+  animation: textGlitch 2s alternate-reverse;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
 
 .revealNav {
   -webkit-transform: translateX(0px);
@@ -406,7 +1170,6 @@ section {
   min-height: 100vh;
   position: sticky;
   right: 0;
-  scroll-snap-align: start;
   top: 0;
 }
 
@@ -433,8 +1196,6 @@ section {
 .scrollWrapper {
   height: 100vh;
   overflow-y: scroll;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
 }
 
 .background {
@@ -443,6 +1204,38 @@ section {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.name {
+  animation: glitch 2s infinite alternate-reverse;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  position: relative;
+  z-index: 5;
+}
+
+.name::before,
+.name::after {
+  content: "RYAN.";
+  position: absolute;
+  z-index: 5;
+}
+
+.name::before {
+  animation: glitch1 2s infinite alternate-reverse;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  left: 3px;
+  text-shadow: -2px 0 red;
+  z-index: 5;
+}
+
+.name::after {
+  animation: glitch2 2s infinite alternate-reverse;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  left: -3px;
+  text-shadow: 2px 0 blue;
 }
 
 .welcome {
@@ -508,10 +1301,14 @@ section {
 
 .techIcon {
   font-size: 6em;
+  position: relative;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
 .techIcon:hover {
+  animation: textGlitch 2s infinite alternate-reverse;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   color: #00ffb8;
 }
 
@@ -540,14 +1337,15 @@ section {
 }
 
 .projects {
+  background-attachment: fixed;
   padding: 2rem 2rem 10rem;
-  position: relative;
 }
 .projects h2 {
   text-align: center;
 }
 
-.projectCard, .projectContainer {
+.projectCard,
+.projectContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -590,12 +1388,17 @@ section {
 .projectCard h3 {
   font-size: 3rem;
 }
+.projectCard h3,
+.projectCard h4 {
+  text-align: center;
+}
 
 .projectDescription {
+  visibility: hidden;
+  opacity: 0;
   padding: 2rem;
   position: absolute;
   text-align: center;
-  visibility: hidden;
 }
 
 .projectCard:hover h3,
@@ -610,6 +1413,9 @@ section {
 .projectCard:focus-within .projectDescription,
 .projectCard:focus .projectDescription {
   visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .makeupToArt {
@@ -798,7 +1604,7 @@ section {
     width: 100%;
   }
   .projectCard h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .projectDescription p {
@@ -816,5 +1622,15 @@ section {
 
   .about h2 {
     margin: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .techIcon:hover, .name, .name::before, .name::after, .navDropdown .navLink:hover, .iconTransition {
+    -webkit-animation: none;
+            animation: none;
+  }
+
+  .name::after, .name::before {
+    display: none;
   }
 }
