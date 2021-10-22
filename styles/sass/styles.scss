@@ -150,7 +150,7 @@ section {
     h2 {
         margin: 1rem;
     }
-    
+
     .articleContainer {
         flex-direction: row;
         justify-content: space-around;
@@ -171,7 +171,6 @@ section {
 .skillBox {
     flex-basis: 20%;
     margin: 0.5rem;
-    // max-width: 10rem;
     text-align: center;
 }
 
@@ -179,10 +178,6 @@ section {
     font-size: 6em;
     position: relative;
     transition: color 0.5s;
-
-    // p{
-    //     word-break: break-all;
-    // }
 
     &:hover {
         -moz-animation: textGlitch 2s infinite alternate-reverse;
