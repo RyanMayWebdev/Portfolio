@@ -44,30 +44,30 @@ portfolio.nav = () => {
 };
 
 portfolio.getCurrentSlide = () => {
-    let projectTop = 10000;
-    portfolio.scrollWrapper.addEventListener('scroll', () => {
-        portfolio.sections.forEach(section => {
-            if (section.id == 'projects') {
-                projectTop = section.offsetTop
-            }
-            if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
-                const sectionID = section.id + 'SideLink';
-                portfolio.sideNavLinks.forEach(link => {
-                    link.innerHTML = '<i class="far fa-circle"></i>';
-                    if (link.id == sectionID) {
-                        link.innerHTML = `<i class="fas fa-circle"></i>`;
-                    };
-                });
-            } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
-                portfolio.sideNavLinks.forEach(link => {
-                    link.innerHTML = '<i class="far fa-circle"></i>';
-                    if (link.id == 'projectsSideLink') {
-                        link.innerHTML = `<i class="fas fa-circle"></i>`;
-                    };
-                });
-            }
+        let projectTop = 10000;
+        portfolio.scrollWrapper.addEventListener('scroll', () => {
+            portfolio.sections.forEach(section => {
+                if (section.id == 'projects') {
+                    projectTop = section.offsetTop
+                }
+                if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
+                    const sectionID = section.id + 'SideLink';
+                    portfolio.sideNavLinks.forEach(link => {
+                        link.innerHTML = '<i class="far fa-circle"></i>';
+                        if (link.id == sectionID) {
+                            link.innerHTML = `<i class="fas fa-circle"></i>`;
+                        };
+                    });
+                } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
+                    portfolio.sideNavLinks.forEach(link => {
+                        link.innerHTML = '<i class="far fa-circle"></i>';
+                        if (link.id == 'projectsSideLink') {
+                            link.innerHTML = `<i class="fas fa-circle"></i>`;
+                        };
+                    });
+                }
+            });
         });
-    });
 };
 
 

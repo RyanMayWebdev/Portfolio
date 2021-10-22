@@ -55,8 +55,6 @@
     visibility: hidden;
     width: 50vw;
 
-
-
     .navLink {
         position: relative;
         font-size: 2.5rem;
@@ -79,6 +77,8 @@
         }
 
         &:hover {
+            -moz-animation: textGlitch 2s alternate-reverse;
+            -moz-animation-delay: 0s;
             animation: textGlitch 2s alternate-reverse;
             animation-delay: 0s;
         }

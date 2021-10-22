@@ -45,9 +45,9 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
     margin: 0 auto;
     max-width: 1440px;
+    min-height: 100vh;
     padding: 2rem;
 }
 
@@ -72,7 +72,9 @@ section {
 }
 
 .name {
+    -moz-animation: glitch 2s infinite alternate-reverse;
     animation: glitch 2s infinite alternate-reverse;
+    -moz-animation-delay: 0s;
     animation-delay: 0s;
     position: relative;
     z-index: 5;
@@ -87,7 +89,9 @@ section {
 }
 
 .name::before {
+    -moz-animation: glitch1 2s infinite alternate-reverse;
     animation: glitch1 2s infinite alternate-reverse;
+    -moz-animation-delay: 0s;
     animation-delay: 0s;
     left: 3px;
     text-shadow: -2px 0 red;
@@ -95,7 +99,9 @@ section {
 }
 
 .name::after {
+    -moz-animation: glitch2 2s infinite alternate-reverse;
     animation: glitch2 2s infinite alternate-reverse;
+    -moz-animation-delay: 0s;
     animation-delay: 0s;
     left: -3px;
     text-shadow: 2px 0 blue;
@@ -155,9 +161,10 @@ section {
 }
 
 .skillBox {
+    flex-basis: 20%;
     margin: 0.5rem;
+    max-width: 10rem;
     text-align: center;
-    width: 20%;
 }
 
 .techIcon {
@@ -165,8 +172,14 @@ section {
     position: relative;
     transition: color 0.5s;
 
+    p{
+        word-break: break-all;
+    }
+
     &:hover {
+        -moz-animation: textGlitch 2s infinite alternate-reverse;
         animation: textGlitch 2s infinite alternate-reverse;
+        -moz-animation-delay: 0s;
         animation-delay: 0s;
         color: #00ffb8;
 
@@ -252,11 +265,11 @@ section {
 }
 
 .projectDescription {
-    visibility: hidden;
     opacity: 0;
     padding: 2rem;
     position: absolute;
     text-align: center;
+    visibility: hidden;
 
 }
 
@@ -272,9 +285,9 @@ section {
     }
 
     .projectDescription {
-        visibility: visible;
         opacity: 1;
         transition: all 1s;
+        visibility: visible;
     }
 
 }
