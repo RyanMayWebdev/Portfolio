@@ -1,5 +1,6 @@
 @import '_setup';
 @import '_mixins';
+@import '_typography';
 @import '_animations';
 
 
@@ -12,13 +13,24 @@ html {
     // scroll-behavior: smooth;
 }
 
-
-
-// =====================
-// TYPOGRAPHY
-// =====================
-@import '_typography';
-
+// ::-webkit-scrollbar-track-piece {
+//     background-color: #00ffb8;
+// }
+// ::-webkit-scrollbar-thumb {
+//     color: #171717;
+// }
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00ffb8;
+}
 // =====================
 // HEADER
 // =====================
@@ -57,6 +69,8 @@ section {
 .scrollWrapper {
     height: 100vh;
     overflow-y: scroll;
+    scrollbar-color:#00ffb8 #171717;
+    scrollbar-width: thin;
 }
 
 // =====================
