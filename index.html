@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css?v=1.1">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>RyanMayCodes</title>
 </head>
 
@@ -26,11 +27,23 @@
             </ul>
         </nav>
         <nav class="sideNav" tabindex="6">
-            <ul class="navContainer"> 
-                <li><a class="navLink sideNavLink" id="welcomeSideLink" href="#welcome" tabindex="7" ><i class="fas fa-circle"></i><p class="srOnly">To welcome page</p></a></li>
-                <li><a class="navLink sideNavLink" id="aboutSideLink" href="#about" tabindex="8"><i class="far fa-circle"></i><p class="srOnly">About</p></a></li>
-                <li><a class="navLink sideNavLink" id="skillsSideLink" href="#skills" tabindex="9"><i class="far fa-circle"></i><p class="srOnly">Skills</p></a></li>
-                <li><a class="navLink sideNavLink" id="projectsSideLink" href="#projects" tabindex="10"><i class="far fa-circle"></i><p class="srOnly">Projects</p></a></li>
+            <ul class="navContainer">
+                <li><a class="navLink sideNavLink" id="welcomeSideLink" href="#welcome" tabindex="7"><i
+                            class="fas fa-circle"></i>
+                        <p class="srOnly">To welcome page</p>
+                    </a></li>
+                <li><a class="navLink sideNavLink" id="aboutSideLink" href="#about" tabindex="8"><i
+                            class="far fa-circle"></i>
+                        <p class="srOnly">About</p>
+                    </a></li>
+                <li><a class="navLink sideNavLink" id="skillsSideLink" href="#skills" tabindex="9"><i
+                            class="far fa-circle"></i>
+                        <p class="srOnly">Skills</p>
+                    </a></li>
+                <li><a class="navLink sideNavLink" id="projectsSideLink" href="#projects" tabindex="10"><i
+                            class="far fa-circle"></i>
+                        <p class="srOnly">Projects</p>
+                    </a></li>
             </ul>
         </nav>
         <ul class="contactUl" tabindex="11">
@@ -41,13 +54,14 @@
                 </a>
             </li>
             <li class="contactList">
-                <a class="contactListItem" href="https://www.linkedin.com/in/ryan-may-b665a2105/" target="_blank" tabindex="13"><i
-                        class="fab fa-linkedin icon"></i>
+                <a class="contactListItem" href="https://www.linkedin.com/in/ryan-may-b665a2105/" target="_blank"
+                    tabindex="13"><i class="fab fa-linkedin icon"></i>
                     <p class="srOnly">LinkedIn</p>
                 </a>
             </li>
             <li class="contactList">
-                <a class="contactListItem" href="mailto:ryan777may@gmail.com" tabindex="14"><i class="fas fa-envelope icon"></i>
+                <a class="contactListItem" href="mailto:ryan777may@gmail.com" tabindex="14"><i
+                        class="fas fa-envelope icon"></i>
                     <p class="srOnly">Email</p>
                 </a>
             </li>
@@ -68,8 +82,10 @@
                 <img class="profileImage" src="images/ryan.jpg" alt="Profile picture of Ryan May">
                 <div class="aboutDescription">
                     <h2>About me.</h2>
-                    <p>I'm a web developer who is passionate about coding and being creative. I recently graduated from Juno College's
-                        immersive web development bootcamp and am looking for a position where I can continue to learn and grow. I'm constantly
+                    <p>I'm a web developer who is passionate about coding and being creative. I recently graduated from
+                        Juno College's
+                        immersive web development bootcamp and am looking for a position where I can continue to learn
+                        and grow. I'm constantly
                         seeking out new ideas, learning new technologies and researching various
                         methods to
                         solve problems.
@@ -168,6 +184,26 @@
             <h2>Projects</h2>
             <div class="projectContainer">
 
+                <article class="projectCard" tabindex="15" id="makeupToArt">
+
+                    <h3>Makeup To Art</h3>
+                    <h4>HTML5 <span class="coloured">|</span> CSS3 <span class="coloured">|</span> JavaScript
+                        <span class="coloured">|</span> React </h4>
+                    <div class="projectDescription">
+                        <p> Makeup To Art is a group based coding project that allows a user to select a brand of makeup
+                            to display a list of colours. The user can then select a colour and using an API call to the
+                            Rijksmuseum they wil receive a painting containing that colour. This project uses two
+                            separate api's, React hooks and components and due to limitations with the Rijksmuseum API
+                            colour codes, a nearest colour package.
+                        </p>
+                        <a class="projectLink" tabindex="0" href="https://makeup-to-art.netlify.app/"
+                            target="_blank">Live
+                            Site</a>
+                        <a class="outlined projectLink" tabindex="0"
+                            href="https://github.com/makeup-to-art/makeup-to-art" target=" _blank">GitHub
+                            Repo</a>
+                    </div>
+                </article>
 
                 <article class="projectCard" tabindex="15" id="bubbles">
 
@@ -185,7 +221,8 @@
                             other channels. Additionally, I've used the react-input-emoji package to allow users to
                             input emojis into there messages. Messages are also filtered for profanity.
                         </p>
-                        <a class="projectLink" tabindex="0" href="https://bubbles-chat.netlify.app/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://bubbles-chat.netlify.app/"
+                            target="_blank">Live
                             Site</a>
                         <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/Project3"
                             target=" _blank">GitHub
@@ -209,9 +246,10 @@
                             answers that are randomized. A timer and score tracker are present, and score is
                             rewarded based on a correct answer and time remaining.
                         </p>
-                        <a class="projectLink" tabindex="0" href="https://triviablitz.github.io/triviaBlitz/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://triviablitz.github.io/triviaBlitz/"
+                            target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink"  tabindex="0" href="https://github.com/triviablitz/triviaBlitz"
+                        <a class="outlined projectLink" tabindex="0" href="https://github.com/triviablitz/triviaBlitz"
                             target=" _blank">GitHub
                             Repo</a>
                     </div>
@@ -238,10 +276,11 @@
                             was set to 125% as a base or 20px.
                         </p>
                         </p>
-                        <a class="projectLink" tabindex="0" href="https://projectone.ryanmaycodes.com/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://projectone.ryanmaycodes.com/"
+                            target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/RyanMayProjectOne"
-                            target="_blank">GitHub
+                        <a class="outlined projectLink" tabindex="0"
+                            href="https://github.com/RyanMayWebdev/RyanMayProjectOne" target="_blank">GitHub
                             Repo</a>
                     </div>
                 </article>
@@ -260,8 +299,8 @@
                         <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/ShutterAssignment/"
                             target="_blank">Live
                             Site</a>
-                        <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/ShutterAssignment"
-                            target="_blank">GitHub
+                        <a class="outlined projectLink" tabindex="0"
+                            href="https://github.com/RyanMayWebdev/ShutterAssignment" target="_blank">GitHub
                             Repo</a>
                     </div>
                 </article>
@@ -282,7 +321,8 @@
                             using
                             the same API to get the movie trailer web address.
                         </p>
-                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/APIProject/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/APIProject/"
+                            target="_blank">Live
                             Site</a>
                         <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/APIProject"
                             target="_blank">GitHub
@@ -304,7 +344,8 @@
                             user
                             input. Additionally, some small animations are done by toggling classes with jQuery.
                         </p>
-                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/Calculator/" target="_blank">Live
+                        <a class="projectLink" tabindex="0" href="https://ryanmaywebdev.github.io/Calculator/"
+                            target="_blank">Live
                             Site</a>
                         <a class="outlined projectLink" tabindex="0" href="https://github.com/RyanMayWebdev/Calculator"
                             target="_blank">GitHub
@@ -313,6 +354,7 @@
                 </article>
             </div>
         </section>
+
     </main>
     <script src="./src/index.js?v=1.1"></script>
     <script src="./src/particles.js"></script>
