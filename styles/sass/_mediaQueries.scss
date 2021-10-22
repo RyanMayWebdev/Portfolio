@@ -36,9 +36,17 @@
     .projectCard {
         flex-basis: 60%;
     }
+
+    .skillBox {
+        flex-basis: 30%;
+    }
 }
 
 @media (max-width: 900px), (max-height: 1024px) {
+
+    h2 {
+        margin: 1rem 0;
+    }
     
     .sideNav {
         display: none;
@@ -84,7 +92,7 @@
     }
 
     .skillBox {
-        flex-basis: 40%;
+        flex-basis: 100%;
         margin: 0.2rem;
 
         p {
@@ -158,9 +166,6 @@
         width: 80%;
     }
 
-    .about h2 {
-        margin: 0;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
