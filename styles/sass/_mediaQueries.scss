@@ -38,15 +38,17 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-height: 1024px) {
+    
+    .sideNav {
+        display: none;
+    }
     .projectCard {
         flex-basis: 100%;
     }
-}
 
-@media (max-height:1023px) {
     section {
-        padding-bottom: 10rem;
+        position: relative;
     }
 
     .about {
@@ -82,10 +84,9 @@
     }
 
     .skillBox {
+        flex-basis: 40%;
         margin: 0.2rem;
-        width: 40%;
 
-        
         p {
             word-break: break-all;
         }
