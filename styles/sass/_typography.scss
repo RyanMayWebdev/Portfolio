@@ -1,0 +1,44 @@
+a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+
+
+body {
+    background-color: #171717;
+    color: #d9d9d9;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Abril Fatface', cursive;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 6rem;
+    z-index: 1;
+
+    .name {
+        color: #00ffb8;
+    }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h2,
+h3 {
+    color: #00ffb8;
+}
+
+p {
+    line-height: 1.2;
+}
