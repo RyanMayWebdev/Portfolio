@@ -1,0 +1,53 @@
+
+@keyframes textGlitch {
+    @for $x from 0 through 10 {
+        #{percentage($x*(1/10))} {
+            text-shadow: random(7)-4+px 0 red;
+            left:(random(100)/20+px);
+        }
+    }
+}
+
+@keyframes glitch {
+    @for $x from 0 through 10 {
+        #{percentage($x*(1/10))} {
+            opacity:random(10)/10;
+        }
+    }
+}
+
+
+
+@keyframes glitch1 {
+    @for $x from 0 through 20 {
+        #{percentage($x*(1/20))} {
+            text-decoration-line: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-style: double;
+            clip: rect(random(100)+px, 500px, random(150)+px, 50px);
+        }
+
+    }
+}
+
+@keyframes glitch2 {
+    @for $x from 0 through 20 {
+        #{percentage($x*(1/20))} {
+            text-decoration-line: line-through;
+            text-decoration-thickness: 1px;
+            clip: rect(random(100)+px, 500px, random(150)+px, 50px);
+        }
+
+    }
+}
+
+@keyframes times {
+    0%{
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}

@@ -16,7 +16,7 @@ portfolio.nav = () => {
         portfolio.dropdown.classList.add('iconTransition');
         setTimeout(() => {
             portfolio.dropdown.classList.remove('iconTransition');
-        },1000);
+        }, 1000);
         //Change icon
         portfolio.dropdown.classList.toggle('fa-bars');
         portfolio.dropdown.classList.toggle('fa-times');
@@ -29,7 +29,7 @@ portfolio.nav = () => {
 
     portfolio.navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            if (link.className != 'navLink sideNavLink'){
+            if (link.className != 'navLink sideNavLink') {
                 toggleNavIcon();
             }
             portfolio.navMenu.classList.remove('revealNav');
@@ -70,23 +70,10 @@ portfolio.getCurrentSlide = () => {
     });
 };
 
-//Because Mozilla has yet to fix a bug that prevents scrolling up when using position:sticky and scroll-snap-align 
-// I made a function that listens for mouse wheel up and then moves the position of the scrollWrapper scrollBar
-portfolio.scroll = () => {
-    document.addEventListener('wheel', (e) => {
-        console.log(e)
-        if (e.deltaY < 0) {
-            const yPos = portfolio.scrollWrapper.scrollTop;
-            const newY = yPos - 1350;
-            portfolio.scrollWrapper.scrollTo(0, newY);
-        };
-    });
-};
-
-
 
 //Change background image for projects section when project card is hovered
-portfolio.projectHover = () => {
+portfolio.projectBackground = () => {
+
     const focused = (e) => {
         let className = '';
         if (e.target.id) {
@@ -137,11 +124,11 @@ portfolio.projectHover = () => {
 
 portfolio.init = () => {
     portfolio.nav();
-    portfolio.projectHover();
+    const mobile = screen.width < 767 ? true : false;
+    if (!mobile) {
+        portfolio.projectBackground();
+    }
     portfolio.getCurrentSlide();
-    if ("userAgentData" in navigator !== true) {
-        portfolio.scroll();
-    };
 };
 
 portfolio.init();

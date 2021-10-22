@@ -1,5 +1,6 @@
 @import '_setup';
 @import '_mixins';
+@import '_animations';
 
 
 // =====================
@@ -36,7 +37,6 @@ section {
     min-height: 100vh;
     position: sticky;
     right: 0;
-    scroll-snap-align: start;
     top: 0;
 }
 
@@ -57,7 +57,6 @@ section {
 .scrollWrapper {
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 // =====================
@@ -72,6 +71,35 @@ section {
     top: 0;
 }
 
+.name {
+    animation: glitch 2s infinite alternate-reverse;
+    animation-delay: 0s;
+    position: relative;
+    z-index: 5;
+}
+
+.name::before,
+.name::after {
+    content: "RYAN.";
+    position: absolute;
+    z-index: 5;
+
+}
+
+.name::before {
+    animation: glitch1 2s infinite alternate-reverse;
+    animation-delay: 0s;
+    left: 3px;
+    text-shadow: -2px 0 red;
+    z-index: 5;
+}
+
+.name::after {
+    animation: glitch2 2s infinite alternate-reverse;
+    animation-delay: 0s;
+    left: -3px;
+    text-shadow: 2px 0 blue;
+}
 
 .welcome {
     align-items: center;
@@ -90,6 +118,7 @@ section {
         width: 100%;
         z-index: -100;
     }
+
 
 }
 
@@ -133,10 +162,14 @@ section {
 
 .techIcon {
     font-size: 6em;
+    position: relative;
     transition: color 0.5s;
 
     &:hover {
+        animation: textGlitch 2s infinite alternate-reverse;
+        animation-delay: 0s;
         color: #00ffb8;
+
     }
 }
 
@@ -170,6 +203,7 @@ section {
 }
 
 .projects {
+    background-attachment: fixed;
     padding: 2rem 2rem 10rem;
     position: relative;
 
@@ -178,7 +212,8 @@ section {
     }
 }
 
-.projectCard, .projectContainer {
+.projectCard,
+.projectContainer {
     align-items: center;
     display: flex;
 }
@@ -201,22 +236,28 @@ section {
     margin: 1rem;
     padding: 1rem;
     position: relative;
-    
+
 
     .coloured {
-        color:#00ffb8;
+        color: #00ffb8;
     }
 
     h3 {
         font-size: 3rem;
     }
+
+    h3,
+    h4 {
+        text-align: center;
+    }
 }
 
 .projectDescription {
+    visibility: hidden;
+    opacity: 0;
     padding: 2rem;
     position: absolute;
     text-align: center;
-    visibility: hidden;
 
 }
 
@@ -233,6 +274,8 @@ section {
 
     .projectDescription {
         visibility: visible;
+        opacity: 1;
+        transition: all 1s;
     }
 
 }
@@ -246,7 +289,7 @@ section {
 }
 
 .triviaBlitz {
-    @include setBackground('./../images/triviaBlitz.png'); 
+    @include setBackground('./../images/triviaBlitz.png');
 }
 
 .barOne {
@@ -264,7 +307,6 @@ section {
 .calculator {
     @include setBackground('./../images/calc.jpg');
 }
-
 
 
 
