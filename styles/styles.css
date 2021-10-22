@@ -204,165 +204,165 @@ ul {
 
 @-webkit-keyframes textGlitch {
   0% {
-    text-shadow: -1px 0 red;
-    left: 2.05px;
+    text-shadow: -2px 0 red;
+    left: 2.2px;
   }
   10% {
-    text-shadow: -1px 0 red;
-    left: 0.8px;
-  }
-  20% {
-    text-shadow: -3px 0 red;
-    left: 3.45px;
-  }
-  30% {
-    text-shadow: -1px 0 red;
-    left: 3.8px;
-  }
-  40% {
-    text-shadow: 1px 0 red;
-    left: 3.5px;
-  }
-  50% {
-    text-shadow: -2px 0 red;
-    left: 1.75px;
-  }
-  60% {
-    text-shadow: -2px 0 red;
-    left: 4.6px;
-  }
-  70% {
-    text-shadow: -3px 0 red;
-    left: 2.25px;
-  }
-  80% {
-    text-shadow: -2px 0 red;
-    left: 3.35px;
-  }
-  90% {
     text-shadow: 3px 0 red;
     left: 1.55px;
   }
-  100% {
+  20% {
+    text-shadow: 3px 0 red;
+    left: 0.95px;
+  }
+  30% {
+    text-shadow: 1px 0 red;
+    left: 3.65px;
+  }
+  40% {
+    text-shadow: 3px 0 red;
+    left: 0.6px;
+  }
+  50% {
     text-shadow: 0px 0 red;
-    left: 3px;
+    left: 2.1px;
+  }
+  60% {
+    text-shadow: -2px 0 red;
+    left: 2.85px;
+  }
+  70% {
+    text-shadow: 2px 0 red;
+    left: 3.2px;
+  }
+  80% {
+    text-shadow: -3px 0 red;
+    left: 0.1px;
+  }
+  90% {
+    text-shadow: 3px 0 red;
+    left: 0.4px;
+  }
+  100% {
+    text-shadow: -3px 0 red;
+    left: 4.7px;
   }
 }
 
 @keyframes textGlitch {
   0% {
-    text-shadow: -1px 0 red;
-    left: 2.05px;
+    text-shadow: -2px 0 red;
+    left: 2.2px;
   }
   10% {
-    text-shadow: -1px 0 red;
-    left: 0.8px;
-  }
-  20% {
-    text-shadow: -3px 0 red;
-    left: 3.45px;
-  }
-  30% {
-    text-shadow: -1px 0 red;
-    left: 3.8px;
-  }
-  40% {
-    text-shadow: 1px 0 red;
-    left: 3.5px;
-  }
-  50% {
-    text-shadow: -2px 0 red;
-    left: 1.75px;
-  }
-  60% {
-    text-shadow: -2px 0 red;
-    left: 4.6px;
-  }
-  70% {
-    text-shadow: -3px 0 red;
-    left: 2.25px;
-  }
-  80% {
-    text-shadow: -2px 0 red;
-    left: 3.35px;
-  }
-  90% {
     text-shadow: 3px 0 red;
     left: 1.55px;
   }
-  100% {
+  20% {
+    text-shadow: 3px 0 red;
+    left: 0.95px;
+  }
+  30% {
+    text-shadow: 1px 0 red;
+    left: 3.65px;
+  }
+  40% {
+    text-shadow: 3px 0 red;
+    left: 0.6px;
+  }
+  50% {
     text-shadow: 0px 0 red;
-    left: 3px;
+    left: 2.1px;
+  }
+  60% {
+    text-shadow: -2px 0 red;
+    left: 2.85px;
+  }
+  70% {
+    text-shadow: 2px 0 red;
+    left: 3.2px;
+  }
+  80% {
+    text-shadow: -3px 0 red;
+    left: 0.1px;
+  }
+  90% {
+    text-shadow: 3px 0 red;
+    left: 0.4px;
+  }
+  100% {
+    text-shadow: -3px 0 red;
+    left: 4.7px;
   }
 }
 @-webkit-keyframes glitch {
   0% {
-    opacity: 0.8;
+    opacity: 0.1;
   }
   10% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   20% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   30% {
-    opacity: 0.5;
+    opacity: 1;
   }
   40% {
-    opacity: 0.4;
+    opacity: 0.1;
   }
   50% {
     opacity: 0.7;
   }
   60% {
-    opacity: 0.1;
+    opacity: 0.8;
   }
   70% {
     opacity: 1;
   }
   80% {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   90% {
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 @keyframes glitch {
   0% {
-    opacity: 0.8;
+    opacity: 0.1;
   }
   10% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   20% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   30% {
-    opacity: 0.5;
+    opacity: 1;
   }
   40% {
-    opacity: 0.4;
+    opacity: 0.1;
   }
   50% {
     opacity: 0.7;
   }
   60% {
-    opacity: 0.1;
+    opacity: 0.8;
   }
   70% {
     opacity: 1;
   }
   80% {
-    opacity: 0.2;
+    opacity: 0.3;
   }
   90% {
-    opacity: 0.7;
+    opacity: 1;
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.5;
   }
 }
 @-webkit-keyframes glitch1 {
@@ -372,7 +372,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(80px, 500px, 24px, 50px);
+    clip: rect(48px, 500px, 37px, 50px);
   }
   5% {
     -webkit-text-decoration-line: underline;
@@ -380,7 +380,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(9px, 500px, 80px, 50px);
+    clip: rect(43px, 500px, 87px, 50px);
   }
   10% {
     -webkit-text-decoration-line: underline;
@@ -388,7 +388,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(70px, 500px, 120px, 50px);
+    clip: rect(16px, 500px, 79px, 50px);
   }
   15% {
     -webkit-text-decoration-line: underline;
@@ -396,7 +396,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(68px, 500px, 100px, 50px);
+    clip: rect(17px, 500px, 26px, 50px);
   }
   20% {
     -webkit-text-decoration-line: underline;
@@ -404,7 +404,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(84px, 500px, 31px, 50px);
+    clip: rect(60px, 500px, 77px, 50px);
   }
   25% {
     -webkit-text-decoration-line: underline;
@@ -412,7 +412,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(16px, 500px, 137px, 50px);
+    clip: rect(76px, 500px, 28px, 50px);
   }
   30% {
     -webkit-text-decoration-line: underline;
@@ -420,7 +420,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(72px, 500px, 40px, 50px);
+    clip: rect(84px, 500px, 22px, 50px);
   }
   35% {
     -webkit-text-decoration-line: underline;
@@ -428,7 +428,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(31px, 500px, 9px, 50px);
+    clip: rect(6px, 500px, 133px, 50px);
   }
   40% {
     -webkit-text-decoration-line: underline;
@@ -436,7 +436,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(21px, 500px, 26px, 50px);
+    clip: rect(86px, 500px, 88px, 50px);
   }
   45% {
     -webkit-text-decoration-line: underline;
@@ -444,7 +444,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(61px, 500px, 18px, 50px);
+    clip: rect(90px, 500px, 58px, 50px);
   }
   50% {
     -webkit-text-decoration-line: underline;
@@ -452,7 +452,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(49px, 500px, 64px, 50px);
+    clip: rect(3px, 500px, 144px, 50px);
   }
   55% {
     -webkit-text-decoration-line: underline;
@@ -460,7 +460,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(60px, 500px, 59px, 50px);
+    clip: rect(45px, 500px, 37px, 50px);
   }
   60% {
     -webkit-text-decoration-line: underline;
@@ -468,7 +468,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(39px, 500px, 132px, 50px);
+    clip: rect(55px, 500px, 85px, 50px);
   }
   65% {
     -webkit-text-decoration-line: underline;
@@ -476,7 +476,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(43px, 500px, 83px, 50px);
+    clip: rect(100px, 500px, 100px, 50px);
   }
   70% {
     -webkit-text-decoration-line: underline;
@@ -484,7 +484,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(70px, 500px, 72px, 50px);
+    clip: rect(7px, 500px, 147px, 50px);
   }
   75% {
     -webkit-text-decoration-line: underline;
@@ -492,7 +492,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(16px, 500px, 135px, 50px);
+    clip: rect(84px, 500px, 113px, 50px);
   }
   80% {
     -webkit-text-decoration-line: underline;
@@ -500,7 +500,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(81px, 500px, 26px, 50px);
+    clip: rect(6px, 500px, 14px, 50px);
   }
   85% {
     -webkit-text-decoration-line: underline;
@@ -508,7 +508,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(58px, 500px, 67px, 50px);
+    clip: rect(23px, 500px, 15px, 50px);
   }
   90% {
     -webkit-text-decoration-line: underline;
@@ -516,7 +516,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(18px, 500px, 62px, 50px);
+    clip: rect(10px, 500px, 133px, 50px);
   }
   95% {
     -webkit-text-decoration-line: underline;
@@ -524,7 +524,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(2px, 500px, 71px, 50px);
+    clip: rect(47px, 500px, 57px, 50px);
   }
   100% {
     -webkit-text-decoration-line: underline;
@@ -532,7 +532,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(55px, 500px, 8px, 50px);
+    clip: rect(1px, 500px, 78px, 50px);
   }
 }
 @keyframes glitch1 {
@@ -542,7 +542,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(80px, 500px, 24px, 50px);
+    clip: rect(48px, 500px, 37px, 50px);
   }
   5% {
     -webkit-text-decoration-line: underline;
@@ -550,7 +550,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(9px, 500px, 80px, 50px);
+    clip: rect(43px, 500px, 87px, 50px);
   }
   10% {
     -webkit-text-decoration-line: underline;
@@ -558,7 +558,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(70px, 500px, 120px, 50px);
+    clip: rect(16px, 500px, 79px, 50px);
   }
   15% {
     -webkit-text-decoration-line: underline;
@@ -566,7 +566,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(68px, 500px, 100px, 50px);
+    clip: rect(17px, 500px, 26px, 50px);
   }
   20% {
     -webkit-text-decoration-line: underline;
@@ -574,7 +574,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(84px, 500px, 31px, 50px);
+    clip: rect(60px, 500px, 77px, 50px);
   }
   25% {
     -webkit-text-decoration-line: underline;
@@ -582,7 +582,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(16px, 500px, 137px, 50px);
+    clip: rect(76px, 500px, 28px, 50px);
   }
   30% {
     -webkit-text-decoration-line: underline;
@@ -590,7 +590,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(72px, 500px, 40px, 50px);
+    clip: rect(84px, 500px, 22px, 50px);
   }
   35% {
     -webkit-text-decoration-line: underline;
@@ -598,7 +598,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(31px, 500px, 9px, 50px);
+    clip: rect(6px, 500px, 133px, 50px);
   }
   40% {
     -webkit-text-decoration-line: underline;
@@ -606,7 +606,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(21px, 500px, 26px, 50px);
+    clip: rect(86px, 500px, 88px, 50px);
   }
   45% {
     -webkit-text-decoration-line: underline;
@@ -614,7 +614,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(61px, 500px, 18px, 50px);
+    clip: rect(90px, 500px, 58px, 50px);
   }
   50% {
     -webkit-text-decoration-line: underline;
@@ -622,7 +622,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(49px, 500px, 64px, 50px);
+    clip: rect(3px, 500px, 144px, 50px);
   }
   55% {
     -webkit-text-decoration-line: underline;
@@ -630,7 +630,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(60px, 500px, 59px, 50px);
+    clip: rect(45px, 500px, 37px, 50px);
   }
   60% {
     -webkit-text-decoration-line: underline;
@@ -638,7 +638,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(39px, 500px, 132px, 50px);
+    clip: rect(55px, 500px, 85px, 50px);
   }
   65% {
     -webkit-text-decoration-line: underline;
@@ -646,7 +646,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(43px, 500px, 83px, 50px);
+    clip: rect(100px, 500px, 100px, 50px);
   }
   70% {
     -webkit-text-decoration-line: underline;
@@ -654,7 +654,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(70px, 500px, 72px, 50px);
+    clip: rect(7px, 500px, 147px, 50px);
   }
   75% {
     -webkit-text-decoration-line: underline;
@@ -662,7 +662,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(16px, 500px, 135px, 50px);
+    clip: rect(84px, 500px, 113px, 50px);
   }
   80% {
     -webkit-text-decoration-line: underline;
@@ -670,7 +670,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(81px, 500px, 26px, 50px);
+    clip: rect(6px, 500px, 14px, 50px);
   }
   85% {
     -webkit-text-decoration-line: underline;
@@ -678,7 +678,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(58px, 500px, 67px, 50px);
+    clip: rect(23px, 500px, 15px, 50px);
   }
   90% {
     -webkit-text-decoration-line: underline;
@@ -686,7 +686,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(18px, 500px, 62px, 50px);
+    clip: rect(10px, 500px, 133px, 50px);
   }
   95% {
     -webkit-text-decoration-line: underline;
@@ -694,7 +694,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(2px, 500px, 71px, 50px);
+    clip: rect(47px, 500px, 57px, 50px);
   }
   100% {
     -webkit-text-decoration-line: underline;
@@ -702,7 +702,7 @@ ul {
     text-decoration-thickness: 1px;
     -webkit-text-decoration-style: double;
             text-decoration-style: double;
-    clip: rect(55px, 500px, 8px, 50px);
+    clip: rect(1px, 500px, 78px, 50px);
   }
 }
 @-webkit-keyframes glitch2 {
@@ -710,127 +710,127 @@ ul {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(9px, 500px, 73px, 50px);
+    clip: rect(59px, 500px, 66px, 50px);
   }
   5% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(73px, 500px, 23px, 50px);
+    clip: rect(42px, 500px, 148px, 50px);
   }
   10% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(37px, 500px, 101px, 50px);
+    clip: rect(41px, 500px, 81px, 50px);
   }
   15% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(78px, 500px, 130px, 50px);
+    clip: rect(24px, 500px, 31px, 50px);
   }
   20% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(26px, 500px, 150px, 50px);
+    clip: rect(50px, 500px, 45px, 50px);
   }
   25% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(14px, 500px, 98px, 50px);
+    clip: rect(83px, 500px, 1px, 50px);
   }
   30% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(58px, 500px, 64px, 50px);
+    clip: rect(13px, 500px, 97px, 50px);
   }
   35% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(90px, 500px, 71px, 50px);
+    clip: rect(62px, 500px, 134px, 50px);
   }
   40% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(57px, 500px, 120px, 50px);
+    clip: rect(9px, 500px, 128px, 50px);
   }
   45% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(5px, 500px, 1px, 50px);
+    clip: rect(61px, 500px, 62px, 50px);
   }
   50% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(94px, 500px, 14px, 50px);
+    clip: rect(11px, 500px, 117px, 50px);
   }
   55% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(87px, 500px, 14px, 50px);
+    clip: rect(53px, 500px, 77px, 50px);
   }
   60% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(100px, 500px, 138px, 50px);
+    clip: rect(50px, 500px, 3px, 50px);
   }
   65% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(92px, 500px, 68px, 50px);
+    clip: rect(38px, 500px, 114px, 50px);
   }
   70% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(49px, 500px, 5px, 50px);
+    clip: rect(46px, 500px, 137px, 50px);
   }
   75% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(99px, 500px, 37px, 50px);
+    clip: rect(30px, 500px, 48px, 50px);
   }
   80% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(29px, 500px, 3px, 50px);
+    clip: rect(92px, 500px, 86px, 50px);
   }
   85% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(40px, 500px, 56px, 50px);
+    clip: rect(4px, 500px, 10px, 50px);
   }
   90% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(49px, 500px, 128px, 50px);
+    clip: rect(47px, 500px, 114px, 50px);
   }
   95% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(28px, 500px, 125px, 50px);
+    clip: rect(32px, 500px, 24px, 50px);
   }
   100% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(24px, 500px, 130px, 50px);
+    clip: rect(90px, 500px, 14px, 50px);
   }
 }
 @keyframes glitch2 {
@@ -838,127 +838,127 @@ ul {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(9px, 500px, 73px, 50px);
+    clip: rect(59px, 500px, 66px, 50px);
   }
   5% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(73px, 500px, 23px, 50px);
+    clip: rect(42px, 500px, 148px, 50px);
   }
   10% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(37px, 500px, 101px, 50px);
+    clip: rect(41px, 500px, 81px, 50px);
   }
   15% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(78px, 500px, 130px, 50px);
+    clip: rect(24px, 500px, 31px, 50px);
   }
   20% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(26px, 500px, 150px, 50px);
+    clip: rect(50px, 500px, 45px, 50px);
   }
   25% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(14px, 500px, 98px, 50px);
+    clip: rect(83px, 500px, 1px, 50px);
   }
   30% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(58px, 500px, 64px, 50px);
+    clip: rect(13px, 500px, 97px, 50px);
   }
   35% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(90px, 500px, 71px, 50px);
+    clip: rect(62px, 500px, 134px, 50px);
   }
   40% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(57px, 500px, 120px, 50px);
+    clip: rect(9px, 500px, 128px, 50px);
   }
   45% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(5px, 500px, 1px, 50px);
+    clip: rect(61px, 500px, 62px, 50px);
   }
   50% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(94px, 500px, 14px, 50px);
+    clip: rect(11px, 500px, 117px, 50px);
   }
   55% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(87px, 500px, 14px, 50px);
+    clip: rect(53px, 500px, 77px, 50px);
   }
   60% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(100px, 500px, 138px, 50px);
+    clip: rect(50px, 500px, 3px, 50px);
   }
   65% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(92px, 500px, 68px, 50px);
+    clip: rect(38px, 500px, 114px, 50px);
   }
   70% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(49px, 500px, 5px, 50px);
+    clip: rect(46px, 500px, 137px, 50px);
   }
   75% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(99px, 500px, 37px, 50px);
+    clip: rect(30px, 500px, 48px, 50px);
   }
   80% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(29px, 500px, 3px, 50px);
+    clip: rect(92px, 500px, 86px, 50px);
   }
   85% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(40px, 500px, 56px, 50px);
+    clip: rect(4px, 500px, 10px, 50px);
   }
   90% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(49px, 500px, 128px, 50px);
+    clip: rect(47px, 500px, 114px, 50px);
   }
   95% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(28px, 500px, 125px, 50px);
+    clip: rect(32px, 500px, 24px, 50px);
   }
   100% {
     -webkit-text-decoration-line: line-through;
             text-decoration-line: line-through;
     text-decoration-thickness: 1px;
-    clip: rect(24px, 500px, 130px, 50px);
+    clip: rect(90px, 500px, 14px, 50px);
   }
 }
 @-webkit-keyframes times {
@@ -1513,7 +1513,7 @@ section {
 @media (max-height: 1023px) {
   section {
     padding-bottom: 10rem;
-    position: relative;
+    position: sticky;
   }
 
   .about .aboutDescription {
