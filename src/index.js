@@ -44,54 +44,31 @@ portfolio.nav = () => {
 };
 
 portfolio.getCurrentSlide = () => {
-    const sections = document.querySelectorAll('section');
-    const options = {
-        root: portfolio.scrollWrapper,
-        rootMargin: '0px 0px 0px 100px',
-        threshold:  [0, 0.20,0.40, 0.60, 0.80, 1]
-    };
 
-    const observerCallback = (entries, observer) => {
-                console.log(entries[0].target.id)
-                console.log(entries)
-                const sectionID = entries[0].target.id + 'SideLink';
+    let projectTop = 10000;
+    portfolio.scrollWrapper.addEventListener('scroll', () => {
+        portfolio.sections.forEach(section => {
+            if (section.id == 'projects') {
+                projectTop = section.offsetTop
+            }
+            if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
+                const sectionID = section.id + 'SideLink';
                 portfolio.sideNavLinks.forEach(link => {
                     link.innerHTML = '<i class="far fa-circle"></i>';
                     if (link.id == sectionID) {
                         link.innerHTML = `<i class="fas fa-circle"></i>`;
                     };
                 });
-
-
-    }
-    const observer = new IntersectionObserver(observerCallback, options);
-    sections.forEach(section => {
-        observer.observe(section);
-    })
-    // let projectTop = 10000;
-    // portfolio.scrollWrapper.addEventListener('scroll', () => {
-    //     portfolio.sections.forEach(section => {
-    //         if (section.id == 'projects') {
-    //             projectTop = section.offsetTop
-    //         }
-    //         if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
-    //             const sectionID = section.id + 'SideLink';
-    //             portfolio.sideNavLinks.forEach(link => {
-    //                 link.innerHTML = '<i class="far fa-circle"></i>';
-    //                 if (link.id == sectionID) {
-    //                     link.innerHTML = `<i class="fas fa-circle"></i>`;
-    //                 };
-    //             });
-    //         } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
-    //             portfolio.sideNavLinks.forEach(link => {
-    //                 link.innerHTML = '<i class="far fa-circle"></i>';
-    //                 if (link.id == 'projectsSideLink') {
-    //                     link.innerHTML = `<i class="fas fa-circle"></i>`;
-    //                 };
-    //             });
-    //         }
-    //     });
-    // });
+            } else if (portfolio.scrollWrapper.scrollTop >= projectTop) {
+                portfolio.sideNavLinks.forEach(link => {
+                    link.innerHTML = '<i class="far fa-circle"></i>';
+                    if (link.id == 'projectsSideLink') {
+                        link.innerHTML = `<i class="fas fa-circle"></i>`;
+                    };
+                });
+            }
+        });
+    });
 };
 
 
