@@ -10,15 +10,8 @@
 
 html {
     font-size: 125%;
-    // scroll-behavior: smooth;
 }
 
-// ::-webkit-scrollbar-track-piece {
-//     background-color: #00ffb8;
-// }
-// ::-webkit-scrollbar-thumb {
-//     color: #171717;
-// }
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -62,9 +55,6 @@ section {
     min-height: 100vh;
     padding: 2rem;
 }
-
-
-
 
 .scrollWrapper {
     height: 100vh;
@@ -157,6 +147,10 @@ section {
 
 .about {
 
+    h2 {
+        margin: 1rem;
+    }
+    
     .articleContainer {
         flex-direction: row;
         justify-content: space-around;
@@ -177,7 +171,7 @@ section {
 .skillBox {
     flex-basis: 20%;
     margin: 0.5rem;
-    max-width: 10rem;
+    // max-width: 10rem;
     text-align: center;
 }
 
@@ -186,9 +180,9 @@ section {
     position: relative;
     transition: color 0.5s;
 
-    p{
-        word-break: break-all;
-    }
+    // p{
+    //     word-break: break-all;
+    // }
 
     &:hover {
         -moz-animation: textGlitch 2s infinite alternate-reverse;
