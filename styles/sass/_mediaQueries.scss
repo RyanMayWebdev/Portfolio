@@ -1,5 +1,3 @@
-
-
 @media (max-width: 1800px) {
     .projectCard {
         flex-basis: 40%;
@@ -42,15 +40,17 @@
     }
 }
 
-@media (max-width: 900px), (max-height: 1024px) {
+@media (max-width: 900px),
+(max-height: 1024px) {
 
     h2 {
         margin: 1rem 0;
     }
-    
+
     .sideNav {
         display: none;
     }
+
     .projectCard {
         flex-basis: 100%;
     }
@@ -66,7 +66,11 @@
     }
 }
 
-
+@media (max-width: 750px) {
+    .projectCard h3 {
+        font-size: 2rem;
+    }
+}
 
 @media (max-width: 650px) {
 
@@ -76,19 +80,25 @@
         }
     }
 
+
     .projectCard {
         height: 40rem;
+
+        h3 {
+            font-size: 1.75rem;
+        }
 
         .projectDescription {
             padding: 1rem;
         }
+
     }
 }
 
 @media (max-width: 474px) {
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .skillBox {
@@ -113,7 +123,7 @@
     .revealNav {
         transform: translateX(0px);
         visibility: visible;
-    
+
     }
 
     .articleContainer {
@@ -125,7 +135,7 @@
     }
 
     .contactUl {
-        top:unset;
+        top: unset;
         bottom: 0;
         left: 0;
         right: 0;
@@ -169,11 +179,18 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .techIcon:hover,.name,.name::before,.name::after, .navDropdown .navLink:hover, .iconTransition {
+
+    .techIcon:hover,
+    .name,
+    .name::before,
+    .name::after,
+    .navDropdown .navLink:hover,
+    .iconTransition {
         animation: none;
     }
 
-    .name::after, .name::before {
+    .name::after,
+    .name::before {
         display: none;
     }
-  }
+}
