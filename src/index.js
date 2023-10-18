@@ -50,7 +50,7 @@ portfolio.getCurrentSlide = () => {
                 if (section.id == 'projects') {
                     projectTop = section.offsetTop
                 }
-                if (section.offsetTop === Math.floor(portfolio.scrollWrapper.scrollTop)) {
+                if (section.offsetTop <= Math.floor(portfolio.scrollWrapper.scrollTop)) {
                     const sectionID = section.id + 'SideLink';
                     portfolio.sideNavLinks.forEach(link => {
                         link.innerHTML = '<i class="far fa-circle"></i>';
