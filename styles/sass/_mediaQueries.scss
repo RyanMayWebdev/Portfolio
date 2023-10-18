@@ -66,6 +66,12 @@
     }
 }
 
+@media (max-width: 691px) {
+    section{
+        position:relative;
+    }
+}
+
 @media (max-width: 650px) {
 
     .welcomeHeader {
